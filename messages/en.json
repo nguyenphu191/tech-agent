@@ -1,0 +1,439 @@
+{
+  "nav": {
+    "services": "Services",
+    "projects": "Projects",
+    "demos": "Demos",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "header": {
+    "cta": "Start a project",
+    "menuTitle": "Navigation",
+    "openMenuAria": "Open menu"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "vi": "Tiếng Việt",
+    "en": "English (US)",
+    "fr": "Français",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "footer": {
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "home": "Home",
+    "servicesPage": "Services (page)",
+    "tagline": "Web & Mobile Agency",
+    "locationValue": "Ho Chi Minh City, Vietnam",
+    "copyright": "© {year} Studio Dev. All rights reserved."
+  },
+  "categories": {
+    "web": "Web",
+    "mobile": "Mobile",
+    "uiux": "UI/UX",
+    "dashboard": "Dashboard"
+  },
+  "meta": {
+    "homeTitle": "Home",
+    "homeDescription": "A modern web & mobile development studio — UX, performance, and conversion-focused delivery.",
+    "siteName": "Studio Dev",
+    "siteTitleDefault": "Studio Dev — Modern Web & Mobile Apps",
+    "siteDescription": "We build modern websites and cross-platform mobile apps with professional UI/UX and strong performance for startups and businesses.",
+    "servicesTitle": "Services",
+    "servicesDescription": "Web, mobile, UI/UX, and backend — clear packages and FAQs.",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Portfolio of web, mobile, UI/UX, and dashboard work — filter by category.",
+    "aboutTitle": "About",
+    "aboutDescription": "Experience, skills, and how we work — building sustainable digital products.",
+    "contactTitle": "Contact",
+    "contactDescription": "Request a quote — share scope, budget, and timeline. We reply within one business day.",
+    "notFound": "Not found"
+  },
+  "home": {
+    "hero": {
+      "badge": "Web · Mobile · UI/UX",
+      "titleBefore": "We build",
+      "titleHighlight": "modern web & apps",
+      "titleAfter": "for startups and businesses.",
+      "subtitle": "Optimized websites, cross-platform apps, professional UI/UX, and high performance — from idea to production.",
+      "primaryCta": "Start a project",
+      "secondaryCta": "View projects",
+      "perfLabel": "Performance",
+      "perfScore": "99/100",
+      "perfHint": "Lighthouse · Core Web Vitals"
+    },
+    "stats": {
+      "projects": "Projects",
+      "experience": "Years experience",
+      "responsive": "Responsive",
+      "delivery": "Fast delivery"
+    },
+    "services": {
+      "title": "Our services",
+      "subtitle": "From landing pages to complex systems — a technical partner for the full product lifecycle.",
+      "detailLink": "Service details",
+      "viewAll": "View all & pricing"
+    },
+    "projects": {
+      "title": "Featured projects",
+      "subtitle": "Selected work — internal dashboards, mobile apps, and modern landing experiences.",
+      "viewAll": "Full portfolio",
+      "timeline": "Timeline: {time}"
+    },
+    "process": {
+      "title": "How we work",
+      "subtitle": "Transparent phases — you always know progress and expected outcomes.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Gather requirements, analyze the system, and propose a solution that fits your budget."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Wireframes, UI design, and prototypes to align on UX before engineering."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Frontend, backend, APIs, and responsive layouts — continuous review and testing."
+        },
+        "deployment": {
+          "title": "Deployment",
+          "description": "Production rollout, domain, SSL, and a clear plan for maintenance and optimization."
+        }
+      }
+    },
+    "tech": {
+      "eyebrow": "Technology",
+      "title": "A modern stack for long-term products",
+      "groups": {
+        "frontend": "Frontend",
+        "mobile": "Mobile",
+        "backend": "Backend",
+        "deploy": "Deployment"
+      }
+    },
+    "testimonials": {
+      "title": "What clients say",
+      "subtitle": "Short feedback from recent projects — proof of communication and delivery quality.",
+      "items": {
+        "a": {
+          "quote": "Clear communication and milestones on time. The new landing page increased demo signups.",
+          "author": "Minh Anh",
+          "role": "CEO, FinTech startup"
+        },
+        "b": {
+          "quote": "Smooth Flutter app with stable Firebase integration. Loved the design-first workflow.",
+          "author": "Quoc Huy",
+          "role": "Product Owner, HealthTech"
+        },
+        "c": {
+          "quote": "Easy-to-read dashboards and great post-launch support from the team.",
+          "author": "Thu Trang",
+          "role": "COO, retail SME"
+        }
+      }
+    },
+    "cta": {
+      "title": "Have an idea?",
+      "titleHighlight": " Let's build it together.",
+      "subtitle": "Book a short call or send a brief — we respond within one business day.",
+      "primary": "Contact now",
+      "secondary": "Book a meeting"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "End-to-end solutions for digital products",
+    "intro": "From ideation and design to development and launch — flexible by phase and budget.",
+    "scopeTitle": "Scope",
+    "pricingTitle": "Indicative pricing",
+    "pricingNote": "Figures are indicative; final quotes follow a proper requirements review.",
+    "faqTitle": "FAQ",
+    "ctaTitle": "Ready to start?",
+    "ctaSubtitle": "Send a brief or book a quick call — no strings attached.",
+    "ctaButton": "Contact",
+    "contactQuote": "Request a quote",
+    "cards": {
+      "web": {
+        "title": "Web development",
+        "description": "Landing pages, company sites, dashboards, CMS, and modern e-commerce.",
+        "includes": [
+          "Landing page",
+          "Company website",
+          "Dashboard",
+          "CMS",
+          "E-commerce",
+          "Admin systems"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile apps",
+        "description": "Cross-platform Flutter apps with API and Firebase integrations.",
+        "includes": [
+          "Flutter",
+          "Android / iOS",
+          "API integration",
+          "Firebase",
+          "Push notifications"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX design",
+        "description": "Clear UX, design systems, and interactive prototypes.",
+        "includes": [
+          "Wireframes",
+          "Prototype",
+          "Design system",
+          "Responsive UI",
+          "Figma"
+        ]
+      },
+      "backend": {
+        "title": "Backend & cloud",
+        "description": "REST APIs, authentication, databases, and secure cloud deployment.",
+        "includes": [
+          "REST API",
+          "Authentication",
+          "Database",
+          "Cloud deployment",
+          "Payments"
+        ]
+      }
+    },
+    "pricing": {
+      "starter": {
+        "name": "Starter",
+        "price": "From ~$600 USD",
+        "description": "Compact landing or marketing site with a fast launch.",
+        "features": ["1–3 pages", "Responsive", "Basic SEO", "One revision round"]
+      },
+      "pro": {
+        "name": "Professional",
+        "price": "From ~$1,800 USD",
+        "description": "Small site or app with CMS, forms, and third-party integrations.",
+        "features": ["Multiple modules", "CMS / Admin", "Analytics", "30-day support"]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom quote",
+        "description": "Complex systems, SLAs, and internal integrations.",
+        "features": ["Scalable architecture", "Security", "DevOps", "Priority support"]
+      }
+    },
+    "faq": [
+      {
+        "q": "Typical delivery timelines?",
+        "a": "Landing pages often take 2–4 weeks; larger products range from 6–12 weeks depending on scope and feedback cadence."
+      },
+      {
+        "q": "Do you offer post-launch maintenance?",
+        "a": "Yes — monthly retainers for dependency updates, monitoring, and small fixes."
+      },
+      {
+        "q": "I already have Figma designs — does that reduce cost?",
+        "a": "Usually yes — the UI phase is shorter; pricing depends on file quality and component coverage."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "Typically 30% kickoff, milestones along the way, and the remainder at handover."
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Portfolio",
+    "subtitle": "Selected public work — web, apps, dashboards, and UX refreshes.",
+    "filterAll": "All"
+  },
+  "projectDetail": {
+    "back": "Back to portfolio",
+    "problem": "Problem",
+    "solution": "Solution",
+    "gallery": "Gallery",
+    "results": "Outcomes",
+    "similarCta": "Start a similar project"
+  },
+  "aboutPage": {
+    "title": "About us",
+    "intro1": "We are a product engineering studio focused on UX and performance. We partner with startups and SMEs that want to ship quickly without sacrificing polish — from landing pages and mobile apps to internal tools.",
+    "intro2": "Replace this copy with your real story or team profile; the page structure supports richer content and imagery.",
+    "skillsTitle": "Skills",
+    "skills": ["Flutter", "React", "Next.js", "Node.js", "UI/UX", "PostgreSQL"],
+    "experienceTitle": "Experience",
+    "experienceItems": [
+      "3+ years building web & mobile",
+      "20+ shipped projects",
+      "Domains: SaaS, e-commerce, internal ops, startup MVPs"
+    ],
+    "workingTitle": "How we work",
+    "workingItems": [
+      "Clean code",
+      "Responsive design",
+      "Scalable architecture",
+      "Deadline-focused"
+    ],
+    "cta": "Work with us"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Tell us about your project. We will reply with next steps and timing.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location"
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "projectType": "Project type",
+    "budget": "Estimated budget",
+    "timeline": "Desired timeline",
+    "message": "Short brief",
+    "placeholderMessage": "Goals, references, technical constraints...",
+    "selectPlaceholder": "Select",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "success": "Sent successfully. We will get back to you soon.",
+    "error": "Could not send. Please retry or email us directly.",
+    "errors": {
+      "name": "Enter your name",
+      "email": "Invalid email",
+      "phone": "Phone number",
+      "projectType": "Choose a project type",
+      "budget": "Choose a budget range",
+      "timeline": "Choose a timeline",
+      "message": "Please add at least 10 characters"
+    },
+    "projectTypes": {
+      "web": "Website",
+      "mobile": "Mobile app",
+      "uiux": "UI/UX",
+      "backend": "Backend / API",
+      "other": "Other"
+    },
+    "budgets": {
+      "under15": "< $600",
+      "15-45": "$600 – $1,800",
+      "45-100": "$1,800 – $4,000",
+      "100+": "> $4,000 / need consultation"
+    },
+    "timelines": {
+      "asap": "As soon as possible",
+      "1m": "Within 1 month",
+      "2-3m": "2 – 3 months",
+      "flex": "Flexible"
+    }
+  },
+  "projects": {
+    "items": {
+      "ecommerce-analytics": {
+        "title": "E-commerce analytics dashboard",
+        "shortDescription": "Real-time dashboard for shop owners to track orders and inventory.",
+        "description": "A sales KPI dashboard with charts and low-stock alerts.",
+        "timeline": "8 weeks",
+        "problem": "Sales data lived in spreadsheets across multiple channels.",
+        "solution": "Unified dashboard with lightweight ETL, interactive charts, and role-based access.",
+        "results": "~40% less daily reconciliation time; faster restocking decisions with automated alerts."
+      },
+      "fitness-companion-app": {
+        "title": "Cross-platform fitness app",
+        "shortDescription": "Personalized workouts with progress tracking and push notifications.",
+        "description": "Flutter app with a Node.js backend, syncing training and nutrition plans.",
+        "timeline": "12 weeks",
+        "problem": "Users wanted one app for schedules, reminders, and a small community.",
+        "solution": "Short onboarding, push notifications, and reliable cloud sync.",
+        "results": "Higher day-7 retention; strong feedback on UX and smooth performance."
+      },
+      "saas-landing-rebrand": {
+        "title": "SaaS landing & brand refresh",
+        "shortDescription": "Landing redesign and design system for a B2B product.",
+        "description": "New UI/UX, Figma prototypes, and a Next.js build with subtle motion.",
+        "timeline": "5 weeks",
+        "problem": "The site did not communicate product value and conversion was low.",
+        "solution": "Information architecture refresh, clearer hero, social proof, and consistent CTAs.",
+        "results": "More demo bookings within two weeks of launch; cohesive marketing brand."
+      },
+      "booking-portal-web": {
+        "title": "Service booking portal",
+        "shortDescription": "Booking website with payments and staff scheduling for SMEs.",
+        "description": "Full-stack Next.js with payments and an admin panel.",
+        "timeline": "10 weeks",
+        "problem": "Bookings were handled by phone, causing conflicts and lost leads.",
+        "solution": "Smart booking forms, online deposits, and staff-aware scheduling in admin.",
+        "results": "Fewer phone inquiries; measurable growth in online bookings."
+      },
+      "corporate-identity": {
+        "title": "Quantum Corporate Identity",
+        "shortDescription": "A cutting-edge landing experience for high-growth tech enterprises.",
+        "description": "We developed a full brand experience that emphasizes speed, security, and scalability. The site features real-time 3D elements and a sleek dark aesthetic.",
+        "timeline": "4 weeks",
+        "problem": "High-tech companies often have complex services that are difficult to explain visually, leading to high bounce rates on traditional corporate sites.",
+        "solution": "We implemented a 'Quantum Design' language using Three.js backgrounds and interactive micro-interactions that guide users through technical concepts effortlessly.",
+        "results": "45% increase in user session duration and a significant boost in lead quality from enterprise partners."
+      },
+      "product-catalog": {
+        "title": "Omni-Channel Product Catalog",
+        "shortDescription": "A seamless management and showcase platform for global inventories.",
+        "description": "A centralized hub designed to handle tens of thousands of SKUs with sub-second search speeds and beautiful product visualizations.",
+        "timeline": "6 weeks",
+        "problem": "Clients with large inventories struggled with slow loading times and difficult navigation, making it hard for customers to find specific products.",
+        "solution": "Developed a custom indexing system with Next.js Server Components and dynamic filtering, combined with high-resolution imagery and 360-degree views.",
+        "results": "Inventory management time reduced by 60%, while conversion rates for deep-catalog items rose by 22%."
+      },
+      "fashion-brand": {
+        "title": "Aura: Digital Atelier",
+        "shortDescription": "Bridging high-end fashion and generative digital art.",
+        "description": "An immersive digital storefront for luxury brands. Every interaction is fluid, mimicking the flow of fabric and light.",
+        "timeline": "5 weeks",
+        "problem": "Luxury brands often find digital platforms too rigid, losing the sensory appeal and brand prestige of physical luxury stores.",
+        "solution": "Integrated generative Liquid Mesh animations and custom transition shaders to create a sense of 'Digital Silk'.",
+        "results": "The collection launch achieved 2M+ organic impressions and sold out within 48 hours."
+      },
+      "ordering-app": {
+        "title": "SwiftOrder Pro",
+        "shortDescription": "Hyper-local delivery application with intelligent logistics.",
+        "description": "A comprehensive mobile solution for on-demand ordering, featuring AI-driven delivery estimates and seamless payment integrations.",
+        "timeline": "8 weeks",
+        "problem": "Consumers demand instant gratification, yet many apps suffer from laggy interfaces and inaccurate delivery estimations.",
+        "solution": "Built a Flutter-based native experience with a custom real-time socket layer for pinpoint accuracy in order tracking.",
+        "results": "App store rating improved to 4.9 stars, and average order-to-door time decreased by 12%."
+      },
+      "driver-app": {
+        "title": "DriveConnect System",
+        "shortDescription": "Real-time driver tracking and booking system.",
+        "description": "A robust platform for managing driver logistics and on-demand bookings.",
+        "timeline": "10 weeks",
+        "problem": "Inefficient driver dispatching led to long wait times and high operational costs.",
+        "solution": "Integrated Google Maps API for optimized routing and real-time fleet visibility.",
+        "results": "Reduced average wait times by 30% and improved driver utilization."
+      },
+      "note-app": {
+        "title": "Nexus Notes",
+        "shortDescription": "Smart note-taking app with organizational logic.",
+        "description": "A sophisticated note-taking tool for professionals and creative thinkers.",
+        "timeline": "6 weeks",
+        "problem": "Digital note-taking often becomes cluttered and difficult to navigate.",
+        "solution": "Implemented tagging logic and a clean, high-tech interface for mental clarity.",
+        "results": "Positive feedback on organizational features and multi-device sync reliability."
+      },
+      "ecommerce-platform": {
+        "title": "MarketSphere E-commerce",
+        "shortDescription": "Scalable e-commerce platform for global trade.",
+        "description": "A high-conversion e-commerce engine designed for modern retail.",
+        "timeline": "12 weeks",
+        "problem": "Scaling e-commerce operations often leads to performance bottlenecks.",
+        "solution": "Architected a serverless frontend with a robust PostgreSQL backend for scale.",
+        "results": "Zero downtime during peak sales and consistent sub-second page loads."
+      },
+      "language-learning": {
+        "title": "LingoPulse App",
+        "shortDescription": "Gamified language learning application.",
+        "description": "An interactive app designed to make language learning addictive and effective.",
+        "timeline": "9 weeks",
+        "problem": "Users often lose motivation in long-term language learning journeys.",
+        "solution": "Incorporated AI-driven gamification and bite-sized learning modules.",
+        "results": "Significant increase in daily active users and course completion rates."
+      }
+    }
+  }
+}

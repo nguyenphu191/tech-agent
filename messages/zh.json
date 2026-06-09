@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "services": "服务",
+    "projects": "项目",
+    "demos": "演示",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "header": {
+    "cta": "开始项目",
+    "menuTitle": "导航",
+    "openMenuAria": "打开菜单"
+  },
+  "localeSwitcher": {
+    "label": "语言",
+    "vi": "Tiếng Việt",
+    "en": "English (US)",
+    "fr": "Français",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "footer": {
+    "linksTitle": "链接",
+    "contactTitle": "联系",
+    "home": "首页",
+    "servicesPage": "服务（页面）",
+    "tagline": "网站与移动应用工作室",
+    "locationValue": "越南胡志明市",
+    "copyright": "© {year} Studio Dev. 保留所有权利。"
+  },
+  "categories": {
+    "web": "Web",
+    "mobile": "Mobile",
+    "uiux": "UI/UX",
+    "dashboard": "Dashboard"
+  },
+  "meta": {
+    "homeTitle": "首页",
+    "homeDescription": "现代化网站与移动应用开发工作室 — 注重体验、性能与转化。",
+    "siteName": "Studio Dev",
+    "siteTitleDefault": "Studio Dev — 现代化网站与移动应用",
+    "siteDescription": "为初创与企业打造现代网站与跨平台移动应用，提供专业 UI/UX 与高性能交付。",
+    "servicesTitle": "服务",
+    "servicesDescription": "网站、移动、UI/UX 与后端 — 清晰套餐与常见问题。",
+    "projectsTitle": "项目",
+    "projectsDescription": "网站、移动、UI/UX 与数据看板作品集 — 可按类别筛选。",
+    "aboutTitle": "关于",
+    "aboutDescription": "经验、技能与工作方式 — 构建可持续的数字产品。",
+    "contactTitle": "联系",
+    "contactDescription": "索取报价 — 说明范围、预算与周期。我们将在一个工作日内回复。",
+    "notFound": "未找到"
+  },
+  "home": {
+    "hero": {
+      "badge": "Web · Mobile · UI/UX",
+      "titleBefore": "我们打造",
+      "titleHighlight": "现代化网站与应用",
+      "titleAfter": "服务初创与企业。",
+      "subtitle": "高性能网站、跨平台应用、专业 UI/UX — 从创意到上线全流程交付。",
+      "primaryCta": "开始项目",
+      "secondaryCta": "查看案例",
+      "perfLabel": "性能",
+      "perfScore": "99/100",
+      "perfHint": "Lighthouse · 核心网页指标"
+    },
+    "stats": {
+      "projects": "项目",
+      "experience": "年经验",
+      "responsive": "响应式",
+      "delivery": "快速交付"
+    },
+    "services": {
+      "title": "我们的服务",
+      "subtitle": "从落地页到复杂系统 — 覆盖产品全生命周期的技术伙伴。",
+      "detailLink": "了解服务详情",
+      "viewAll": "查看全部与报价"
+    },
+    "projects": {
+      "title": "精选项目",
+      "subtitle": "部分交付成果 — 内部看板、移动应用与现代落地页。",
+      "viewAll": "完整作品集",
+      "timeline": "周期：{time}"
+    },
+    "process": {
+      "title": "工作流程",
+      "subtitle": "阶段透明 — 随时了解进度与交付预期。",
+      "steps": {
+        "discovery": {
+          "title": "需求梳理",
+          "description": "收集需求、分析系统并提出符合预算的方案。"
+        },
+        "design": {
+          "title": "设计",
+          "description": "线框、界面与原型，在开发前对齐体验。"
+        },
+        "development": {
+          "title": "开发",
+          "description": "前端、后端、接口与响应式 — 持续评审与测试。"
+        },
+        "deployment": {
+          "title": "上线",
+          "description": "生产部署、域名、SSL 及维护优化计划。"
+        }
+      }
+    },
+    "tech": {
+      "eyebrow": "技术",
+      "title": "面向长期产品的现代技术栈",
+      "groups": {
+        "frontend": "前端",
+        "mobile": "移动端",
+        "backend": "后端",
+        "deploy": "部署运维"
+      }
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "subtitle": "近期项目反馈 — 沟通与交付质量的体现。",
+      "items": {
+        "a": {
+          "quote": "沟通清晰、节点准时。新落地页带来了更多演示预约。",
+          "author": "Minh Anh",
+          "role": "CEO，金融科技初创"
+        },
+        "b": {
+          "quote": "Flutter 应用流畅，Firebase 集成稳定。设计先行流程很棒。",
+          "author": "Quoc Huy",
+          "role": "产品负责人，健康科技"
+        },
+        "c": {
+          "quote": "数据看板易读，上线后团队支持也很到位。",
+          "author": "Thu Trang",
+          "role": "COO，零售中小企业"
+        }
+      }
+    },
+    "cta": {
+      "title": "有想法？",
+      "titleHighlight": " 一起实现它。",
+      "subtitle": "预约简短沟通或发送需求简报 — 一个工作日内回复。",
+      "primary": "立即联系",
+      "secondary": "预约会议"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "服务",
+    "title": "数字产品端到端解决方案",
+    "intro": "从构思、设计到开发与上线 — 按阶段与预算灵活推进。",
+    "scopeTitle": "范围",
+    "pricingTitle": "参考报价",
+    "pricingNote": "价格为参考，正式报价以需求评审为准。",
+    "faqTitle": "常见问题",
+    "ctaTitle": "准备开始？",
+    "ctaSubtitle": "发送简报或预约快速沟通 — 无附加条件。",
+    "ctaButton": "联系",
+    "contactQuote": "索取报价",
+    "cards": {
+      "web": {
+        "title": "网站开发",
+        "description": "落地页、企业官网、数据看板、CMS 与现代电商。",
+        "includes": [
+          "落地页",
+          "企业网站",
+          "数据看板",
+          "CMS",
+          "电商",
+          "管理后台"
+        ]
+      },
+      "mobile": {
+        "title": "移动应用",
+        "description": "跨平台 Flutter 应用，集成 API 与 Firebase。",
+        "includes": [
+          "Flutter",
+          "Android / iOS",
+          "API 集成",
+          "Firebase",
+          "推送通知"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX 设计",
+        "description": "清晰体验、设计系统与可交互原型。",
+        "includes": [
+          "线框图",
+          "原型",
+          "设计系统",
+          "响应式界面",
+          "Figma"
+        ]
+      },
+      "backend": {
+        "title": "后端与云",
+        "description": "REST API、身份认证、数据库与安全云部署。",
+        "includes": [
+          "REST API",
+          "身份认证",
+          "数据库",
+          "云部署",
+          "支付"
+        ]
+      }
+    },
+    "pricing": {
+      "starter": {
+        "name": "入门",
+        "price": "约 4,000 元人民币起",
+        "description": "精简落地页或展示站，快速上线。",
+        "features": ["1–3 页", "响应式", "基础 SEO", "一轮修改"]
+      },
+      "pro": {
+        "name": "专业",
+        "price": "约 13,000 元人民币起",
+        "description": "含 CMS、表单与第三方集成的小型站点或应用。",
+        "features": ["多模块", "CMS / 管理后台", "数据分析", "30 天支持"]
+      },
+      "enterprise": {
+        "name": "企业",
+        "price": "单独报价",
+        "description": "复杂系统、SLA 与内部系统集成。",
+        "features": ["可扩展架构", "安全", "DevOps", "优先支持"]
+      }
+    },
+    "faq": [
+      {
+        "q": "一般交付周期？",
+        "a": "落地页常见 2–4 周；更大项目约 6–12 周，视范围与反馈节奏而定。"
+      },
+      {
+        "q": "上线后是否提供维护？",
+        "a": "提供 — 按月包含依赖更新、监控与小问题修复。"
+      },
+      {
+        "q": "已有 Figma 设计能否降价？",
+        "a": "通常可以 — UI 阶段更短，具体视文件与组件完整度而定。"
+      },
+      {
+        "q": "付款方式？",
+        "a": "常见为 30% 启动款，按里程碑支付，尾款验收时结清。"
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "作品集",
+    "subtitle": "公开案例节选 — 网站、应用、看板与体验升级。",
+    "filterAll": "全部"
+  },
+  "projectDetail": {
+    "back": "返回作品集",
+    "problem": "挑战",
+    "solution": "方案",
+    "gallery": "图集",
+    "results": "成果",
+    "similarCta": "启动类似项目"
+  },
+  "aboutPage": {
+    "title": "关于我们",
+    "intro1": "我们是以体验与性能为核心的产品工程工作室，与希望快速上线且保持品质的初创及中小企业合作 — 覆盖落地页、移动应用与内部系统。",
+    "intro2": "可将此文案替换为您的真实故事或团队介绍；页面结构支持更丰富内容与图片。",
+    "skillsTitle": "技能",
+    "skills": ["Flutter", "React", "Next.js", "Node.js", "UI/UX", "PostgreSQL"],
+    "experienceTitle": "经验",
+    "experienceItems": [
+      "3+ 年网站与移动开发经验",
+      "20+ 已交付项目",
+      "领域：SaaS、电商、企业内部系统、初创 MVP"
+    ],
+    "workingTitle": "工作方式",
+    "workingItems": [
+      "整洁代码",
+      "响应式设计",
+      "可扩展架构",
+      "按期交付"
+    ],
+    "cta": "与我们合作"
+  },
+  "contactPage": {
+    "title": "联系",
+    "subtitle": "告诉我们您的项目，我们将回复下一步与时间安排。",
+    "emailLabel": "邮箱",
+    "phoneLabel": "电话",
+    "locationLabel": "地址"
+  },
+  "form": {
+    "name": "姓名",
+    "email": "邮箱",
+    "phone": "电话",
+    "projectType": "项目类型",
+    "budget": "预估预算",
+    "timeline": "期望周期",
+    "message": "简要说明",
+    "placeholderMessage": "目标、参考、技术约束…",
+    "selectPlaceholder": "请选择",
+    "submit": "发送",
+    "submitting": "发送中…",
+    "success": "发送成功，我们会尽快联系您。",
+    "error": "发送失败，请重试或直接发邮件。",
+    "errors": {
+      "name": "请填写姓名",
+      "email": "邮箱格式无效",
+      "phone": "电话号码",
+      "projectType": "请选择项目类型",
+      "budget": "请选择预算区间",
+      "timeline": "请选择周期",
+      "message": "至少 10 个字符"
+    },
+    "projectTypes": {
+      "web": "网站",
+      "mobile": "移动应用",
+      "uiux": "UI/UX",
+      "backend": "后端 / API",
+      "other": "其他"
+    },
+    "budgets": {
+      "under15": "< ¥4,000",
+      "15-45": "¥4,000 – ¥13,000",
+      "45-100": "¥13,000 – ¥28,000",
+      "100+": "> ¥28,000 / 需咨询"
+    },
+    "timelines": {
+      "asap": "尽快",
+      "1m": "1 个月内",
+      "2-3m": "2 – 3 个月",
+      "flex": "灵活"
+    }
+  },
+  "projects": {
+    "items": {
+      "ecommerce-analytics": {
+        "title": "电商数据分析看板",
+        "shortDescription": "店主实时查看订单与库存的仪表盘。",
+        "description": "销售 KPI、图表与低库存预警。",
+        "timeline": "8 周",
+        "problem": "多渠道销售数据分散在表格中。",
+        "solution": "统一看板、轻量 ETL、交互图表与角色权限。",
+        "results": "每日对账时间约减少 40%；自动预警加快补货决策。"
+      },
+      "fitness-companion-app": {
+        "title": "跨平台健身应用",
+        "shortDescription": "个性化训练、进度跟踪与推送提醒。",
+        "description": "Flutter 应用配合 Node.js 后端，同步训练与饮食计划。",
+        "timeline": "12 周",
+        "problem": "用户希望一个应用管理日程、提醒与小社区。",
+        "solution": "精简 onboarding、推送通知与可靠云同步。",
+        "results": "第 7 日留存提升；体验流畅获好评。"
+      },
+      "saas-landing-rebrand": {
+        "title": "SaaS 落地页与品牌焕新",
+        "shortDescription": "B2B 产品落地页重设计与设计系统。",
+        "description": "新 UI/UX、Figma 原型与带轻动效的 Next.js 实现。",
+        "timeline": "5 周",
+        "problem": "原站未能传达产品价值，转化偏低。",
+        "solution": "信息架构优化、清晰主视觉、社会证明与一致 CTA。",
+        "results": "上线两周内演示预约增加；营销品牌更统一。"
+      },
+      "booking-portal-web": {
+        "title": "服务预约门户",
+        "shortDescription": "含支付与员工排班的小企业预约网站。",
+        "description": "Next.js 全栈、支付与管理后台。",
+        "timeline": "10 周",
+        "problem": "电话预约易冲突并流失线索。",
+        "solution": "智能预约表单、在线定金、按人员的后台排班。",
+        "results": "咨询电话减少；线上预约量可衡量增长。"
+      }
+    }
+  }
+}

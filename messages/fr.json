@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "services": "Services",
+    "projects": "Projets",
+    "demos": "Démos",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "header": {
+    "cta": "Démarrer un projet",
+    "menuTitle": "Navigation",
+    "openMenuAria": "Ouvrir le menu"
+  },
+  "localeSwitcher": {
+    "label": "Langue",
+    "vi": "Tiếng Việt",
+    "en": "English (US)",
+    "fr": "Français",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "footer": {
+    "linksTitle": "Liens",
+    "contactTitle": "Contact",
+    "home": "Accueil",
+    "servicesPage": "Services (page)",
+    "tagline": "Agence Web & Mobile",
+    "locationValue": "Hô Chi Minh-Ville, Vietnam",
+    "copyright": "© {year} Studio Dev. Tous droits réservés."
+  },
+  "categories": {
+    "web": "Web",
+    "mobile": "Mobile",
+    "uiux": "UI/UX",
+    "dashboard": "Dashboard"
+  },
+  "meta": {
+    "homeTitle": "Accueil",
+    "homeDescription": "Studio de développement web et mobile moderne — UX, performance et conversion.",
+    "siteName": "Studio Dev",
+    "siteTitleDefault": "Studio Dev — Apps Web & Mobile modernes",
+    "siteDescription": "Sites web et applications mobiles multiplateformes avec UI/UX professionnelle et haute performance pour startups et entreprises.",
+    "servicesTitle": "Services",
+    "servicesDescription": "Web, mobile, UI/UX et backend — offres claires et FAQ.",
+    "projectsTitle": "Projets",
+    "projectsDescription": "Portfolio web, mobile, UI/UX et tableaux de bord — filtrer par catégorie.",
+    "aboutTitle": "À propos",
+    "aboutDescription": "Expérience, compétences et méthode de travail — produits numériques durables.",
+    "contactTitle": "Contact",
+    "contactDescription": "Demandez un devis — périmètre, budget et délais. Réponse sous un jour ouvré.",
+    "notFound": "Introuvable"
+  },
+  "home": {
+    "hero": {
+      "badge": "Web · Mobile · UI/UX",
+      "titleBefore": "Nous créons des",
+      "titleHighlight": "apps & sites modernes",
+      "titleAfter": "pour startups et entreprises.",
+      "subtitle": "Sites optimisés, apps multiplateformes, UI/UX professionnelle et haute performance — de l’idée à la production.",
+      "primaryCta": "Démarrer un projet",
+      "secondaryCta": "Voir les projets",
+      "perfLabel": "Performance",
+      "perfScore": "99/100",
+      "perfHint": "Lighthouse · Core Web Vitals"
+    },
+    "stats": {
+      "projects": "Projets",
+      "experience": "Années d’expérience",
+      "responsive": "Responsive",
+      "delivery": "Livraison rapide"
+    },
+    "services": {
+      "title": "Nos services",
+      "subtitle": "Des landing pages aux systèmes complexes — un partenaire technique pour tout le cycle produit.",
+      "detailLink": "Détails des services",
+      "viewAll": "Tout voir & tarifs"
+    },
+    "projects": {
+      "title": "Projets en vedette",
+      "subtitle": "Sélection de réalisations — dashboards, apps mobiles et landings modernes.",
+      "viewAll": "Portfolio complet",
+      "timeline": "Délai : {time}"
+    },
+    "process": {
+      "title": "Notre méthode",
+      "subtitle": "Des phases transparentes — vous suivez toujours l’avancement et les livrables.",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "description": "Recueil du besoin, analyse du système et proposition adaptée au budget."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Wireframes, UI et prototypes pour valider l’UX avant le développement."
+        },
+        "development": {
+          "title": "Développement",
+          "description": "Front, back, API et responsive — revue de code et tests continus."
+        },
+        "deployment": {
+          "title": "Mise en production",
+          "description": "Déploiement, domaine, SSL et plan de maintenance / optimisation."
+        }
+      }
+    },
+    "tech": {
+      "eyebrow": "Technologie",
+      "title": "Une stack moderne pour des produits durables",
+      "groups": {
+        "frontend": "Frontend",
+        "mobile": "Mobile",
+        "backend": "Backend",
+        "deploy": "Déploiement"
+      }
+    },
+    "testimonials": {
+      "title": "Ce que disent les clients",
+      "subtitle": "Retours récents — qualité d’échange et de livraison.",
+      "items": {
+        "a": {
+          "quote": "Communication claire et jalons respectés. La nouvelle landing a augmenté les démos.",
+          "author": "Minh Anh",
+          "role": "CEO, startup FinTech"
+        },
+        "b": {
+          "quote": "App Flutter fluide et Firebase stable. Excellente approche design d’abord.",
+          "author": "Quoc Huy",
+          "role": "Product Owner, HealthTech"
+        },
+        "c": {
+          "quote": "Tableaux de bord lisibles et très bon support après le lancement.",
+          "author": "Thu Trang",
+          "role": "COO, PME retail"
+        }
+      }
+    },
+    "cta": {
+      "title": "Une idée ?",
+      "titleHighlight": " Construisons-la ensemble.",
+      "subtitle": "Réservez un appel ou envoyez un brief — réponse sous un jour ouvré.",
+      "primary": "Contact",
+      "secondary": "Planifier un rendez-vous"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Services",
+    "title": "Solutions de bout en bout pour produits numériques",
+    "intro": "De l’idée au lancement — flexible selon les phases et le budget.",
+    "scopeTitle": "Périmètre",
+    "pricingTitle": "Tarifs indicatifs",
+    "pricingNote": "Chiffres indicatifs ; devis final après analyse du besoin.",
+    "faqTitle": "FAQ",
+    "ctaTitle": "Prêt à commencer ?",
+    "ctaSubtitle": "Envoyez un brief ou réservez un appel — sans engagement.",
+    "ctaButton": "Contact",
+    "contactQuote": "Demander un devis",
+    "cards": {
+      "web": {
+        "title": "Développement web",
+        "description": "Landings, sites vitrine, dashboards, CMS et e-commerce moderne.",
+        "includes": [
+          "Landing page",
+          "Site entreprise",
+          "Dashboard",
+          "CMS",
+          "E-commerce",
+          "Back-office"
+        ]
+      },
+      "mobile": {
+        "title": "Applications mobiles",
+        "description": "Apps Flutter multiplateforme avec API et Firebase.",
+        "includes": [
+          "Flutter",
+          "Android / iOS",
+          "Intégration API",
+          "Firebase",
+          "Notifications push"
+        ]
+      },
+      "uiux": {
+        "title": "Design UI/UX",
+        "description": "UX claire, design systems et prototypes interactifs.",
+        "includes": [
+          "Wireframes",
+          "Prototype",
+          "Design system",
+          "UI responsive",
+          "Figma"
+        ]
+      },
+      "backend": {
+        "title": "Backend & cloud",
+        "description": "API REST, auth, bases de données et déploiement cloud sécurisé.",
+        "includes": [
+          "API REST",
+          "Authentification",
+          "Base de données",
+          "Déploiement cloud",
+          "Paiements"
+        ]
+      }
+    },
+    "pricing": {
+      "starter": {
+        "name": "Démarrage",
+        "price": "À partir de ~550 €",
+        "description": "Landing ou site vitrine compact, mise en ligne rapide.",
+        "features": ["1–3 pages", "Responsive", "SEO de base", "1 cycle de révisions"]
+      },
+      "pro": {
+        "name": "Professionnel",
+        "price": "À partir de ~1 650 €",
+        "description": "Petit site ou app avec CMS, formulaires et intégrations.",
+        "features": ["Modules multiples", "CMS / Admin", "Analytics", "Support 30 jours"]
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur devis",
+        "description": "Systèmes complexes, SLA et intégrations internes.",
+        "features": ["Architecture scalable", "Sécurité", "DevOps", "Support prioritaire"]
+      }
+    },
+    "faq": [
+      {
+        "q": "Délais de livraison habituels ?",
+        "a": "Landings souvent 2–4 semaines ; produits plus larges 6–12 semaines selon le périmètre."
+      },
+      {
+        "q": "Maintenance après lancement ?",
+        "a": "Oui — forfaits mensuels : mises à jour, monitoring, petites corrections."
+      },
+      {
+        "q": "J’ai déjà des maquettes Figma — réduction de coût ?",
+        "a": "Souvent oui — la phase UI est plus courte selon la qualité des fichiers."
+      },
+      {
+        "q": "Modalités de paiement ?",
+        "a": "En général 30 % au démarrage, jalons puis solde à la livraison."
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Portfolio",
+    "subtitle": "Réalisations publiques — web, apps, dashboards et refontes UX.",
+    "filterAll": "Tous"
+  },
+  "projectDetail": {
+    "back": "Retour au portfolio",
+    "problem": "Problème",
+    "solution": "Solution",
+    "gallery": "Galerie",
+    "results": "Résultats",
+    "similarCta": "Lancer un projet similaire"
+  },
+  "aboutPage": {
+    "title": "À propos",
+    "intro1": "Studio produit centré UX et performance. Nous accompagnons startups et PME qui veulent livrer vite sans sacrifier la qualité — landings, apps mobiles et outils internes.",
+    "intro2": "Remplacez ce texte par votre histoire ou votre équipe ; la page accueille contenus et visuels enrichis.",
+    "skillsTitle": "Compétences",
+    "skills": ["Flutter", "React", "Next.js", "Node.js", "UI/UX", "PostgreSQL"],
+    "experienceTitle": "Expérience",
+    "experienceItems": [
+      "3+ ans web & mobile",
+      "20+ projets livrés",
+      "Secteurs : SaaS, e-commerce, interne, MVP startup"
+    ],
+    "workingTitle": "Notre façon de travailler",
+    "workingItems": [
+      "Code propre",
+      "Design responsive",
+      "Architecture scalable",
+      "Respect des délais"
+    ],
+    "cta": "Travailler avec nous"
+  },
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "Parlez-nous de votre projet. Nous répondrons avec les prochaines étapes.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Téléphone",
+    "locationLabel": "Adresse"
+  },
+  "form": {
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "projectType": "Type de projet",
+    "budget": "Budget estimé",
+    "timeline": "Délai souhaité",
+    "message": "Brief court",
+    "placeholderMessage": "Objectifs, références, contraintes techniques...",
+    "selectPlaceholder": "Choisir",
+    "submit": "Envoyer",
+    "submitting": "Envoi…",
+    "success": "Message envoyé. Nous revenons vers vous rapidement.",
+    "error": "Échec d’envoi. Réessayez ou écrivez-nous directement.",
+    "errors": {
+      "name": "Indiquez votre nom",
+      "email": "E-mail invalide",
+      "phone": "Numéro de téléphone",
+      "projectType": "Choisissez un type de projet",
+      "budget": "Choisissez une fourchette budgétaire",
+      "timeline": "Choisissez un délai",
+      "message": "Au moins 10 caractères"
+    },
+    "projectTypes": {
+      "web": "Site web",
+      "mobile": "App mobile",
+      "uiux": "UI/UX",
+      "backend": "Backend / API",
+      "other": "Autre"
+    },
+    "budgets": {
+      "under15": "< 550 €",
+      "15-45": "550 – 1 650 €",
+      "45-100": "1 650 – 3 700 €",
+      "100+": "> 3 700 € / sur devis"
+    },
+    "timelines": {
+      "asap": "Dès que possible",
+      "1m": "Sous 1 mois",
+      "2-3m": "2 – 3 mois",
+      "flex": "Flexible"
+    }
+  },
+  "projects": {
+    "items": {
+      "ecommerce-analytics": {
+        "title": "Tableau de bord e-commerce",
+        "shortDescription": "Dashboard temps réel pour suivre commandes et stocks.",
+        "description": "KPI de vente, graphiques et alertes de stock bas.",
+        "timeline": "8 semaines",
+        "problem": "Données éparpillées sur des tableurs multi-canaux.",
+        "solution": "Dashboard unifié, ETL léger, graphiques interactifs et rôles.",
+        "results": "~40 % de temps de réconciliation en moins ; réassort plus rapide."
+      },
+      "fitness-companion-app": {
+        "title": "App fitness multiplateforme",
+        "shortDescription": "Entraînements personnalisés, suivi et notifications push.",
+        "description": "App Flutter et backend Node.js pour plans sport et nutrition.",
+        "timeline": "12 semaines",
+        "problem": "Une seule app pour planning, rappels et petite communauté.",
+        "solution": "Onboarding court, push et synchro cloud fiable.",
+        "results": "Meilleure rétention J7 ; UX et fluidité appréciées."
+      },
+      "saas-landing-rebrand": {
+        "title": "Landing SaaS & identité",
+        "shortDescription": "Refonte landing et design system B2B.",
+        "description": "Nouvelle UI/UX, prototypes Figma et Next.js avec motion léger.",
+        "timeline": "5 semaines",
+        "problem": "La valeur produit n’était pas claire ; faible conversion.",
+        "solution": "Architecture info, hero net, preuves sociales et CTA cohérents.",
+        "results": "Plus de démos sous deux semaines ; marque marketing alignée."
+      },
+      "booking-portal-web": {
+        "title": "Portail de réservation",
+        "shortDescription": "Réservations en ligne, paiements et planning équipe pour PME.",
+        "description": "Next.js full-stack, paiements et admin.",
+        "timeline": "10 semaines",
+        "problem": "Réservations par téléphone : conflits et leads perdus.",
+        "solution": "Formulaires intelligents, acomptes en ligne, planning par collaborateur.",
+        "results": "Moins d’appels ; croissance des réservations en ligne."
+      }
+    }
+  }
+}

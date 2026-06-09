@@ -1,0 +1,449 @@
+{
+  "nav": {
+    "services": "Dịch vụ",
+    "projects": "Dự án",
+    "demos": "Demo",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ"
+  },
+  "header": {
+    "cta": "Bắt đầu dự án",
+    "menuTitle": "Điều hướng",
+    "openMenuAria": "Mở menu"
+  },
+  "localeSwitcher": {
+    "label": "Ngôn ngữ",
+    "vi": "Tiếng Việt",
+    "en": "English (US)",
+    "fr": "Français",
+    "zh": "中文",
+    "de": "Deutsch"
+  },
+  "footer": {
+    "linksTitle": "Liên kết",
+    "contactTitle": "Liên hệ",
+    "home": "Trang chủ",
+    "servicesPage": "Dịch vụ (trang)",
+    "tagline": "Web & Mobile Agency",
+    "locationValue": "Thành phố Hồ Chí Minh, Việt Nam",
+    "copyright": "© {year} Studio Dev. Đã đăng ký bản quyền."
+  },
+  "categories": {
+    "web": "Web",
+    "mobile": "Mobile",
+    "uiux": "UI/UX",
+    "dashboard": "Dashboard"
+  },
+  "meta": {
+    "homeTitle": "Trang chủ",
+    "homeDescription": "Studio phát triển website và mobile app hiện đại — UI/UX, hiệu suất và chuyển đổi khách hàng.",
+    "siteName": "Studio Dev",
+    "siteTitleDefault": "Studio Dev — Web & Mobile App hiện đại",
+    "siteDescription": "Phát triển website và ứng dụng mobile đa nền tảng, UI/UX chuyên nghiệp, tối ưu hiệu suất cho startup và doanh nghiệp.",
+    "servicesTitle": "Dịch vụ",
+    "servicesDescription": "Website, mobile app, UI/UX và backend — gói dịch vụ và FAQ minh bạch.",
+    "projectsTitle": "Dự án",
+    "projectsDescription": "Portfolio website, mobile app, UI/UX và dashboard — lọc theo hạng mục.",
+    "aboutTitle": "Giới thiệu",
+    "aboutDescription": "Kinh nghiệm, kỹ năng và cách làm việc — Studio Dev phát triển sản phẩm số bền vững.",
+    "contactTitle": "Liên hệ",
+    "contactDescription": "Gửi yêu cầu báo giá — mô tả dự án, ngân sách và timeline. Phản hồi trong 24h làm việc.",
+    "notFound": "Không tìm thấy"
+  },
+  "home": {
+    "hero": {
+      "badge": "Web · Mobile · UI/UX",
+      "titleBefore": "Chúng tôi xây dựng",
+      "titleHighlight": "web & app hiện đại",
+      "titleAfter": "cho startup và doanh nghiệp.",
+      "subtitle": "Phát triển website tối ưu, ứng dụng đa nền tảng, UI/UX chuyên nghiệp và hiệu suất cao — từ ý tưởng đến triển khai thực tế.",
+      "primaryCta": "Bắt đầu dự án",
+      "secondaryCta": "Xem dự án",
+      "perfLabel": "Hiệu năng",
+      "perfScore": "99/100",
+      "perfHint": "Lighthouse · Core Web"
+    },
+    "stats": {
+      "projects": "Dự án",
+      "experience": "Năm kinh nghiệm",
+      "responsive": "Responsive",
+      "delivery": "Giao hàng nhanh"
+    },
+    "services": {
+      "title": "Dịch vụ của chúng tôi",
+      "subtitle": "Từ landing page đến hệ thống phức tạp — một đối tác kỹ thuật cho toàn bộ vòng đời sản phẩm.",
+      "detailLink": "Chi tiết dịch vụ",
+      "viewAll": "Xem tất cả & báo giá"
+    },
+    "projects": {
+      "title": "Dự án nổi bật",
+      "subtitle": "Một số sản phẩm đã triển khai — từ dashboard nội bộ đến app mobile và landing hiện đại.",
+      "viewAll": "Toàn bộ portfolio",
+      "timeline": "Timeline: {time}"
+    },
+    "process": {
+      "title": "Quy trình làm việc",
+      "subtitle": "Minh bạch từng giai đoạn — bạn luôn biết tiến độ và kết quả mong đợi.",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Thu thập yêu cầu, phân tích hệ thống và đề xuất phương án phù hợp ngân sách."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Wireframe, UI design và prototype để thống nhất trải nghiệm trước khi code."
+        },
+        "development": {
+          "title": "Development",
+          "description": "Frontend, backend, API và responsive — code review và kiểm thử liên tục."
+        },
+        "deployment": {
+          "title": "Deployment",
+          "description": "Triển khai production, domain, SSL và lộ trình bảo trì / tối ưu sau launch."
+        }
+      }
+    },
+    "tech": {
+      "eyebrow": "Công nghệ",
+      "title": "Stack hiện đại cho sản phẩm bền vững",
+      "groups": {
+        "frontend": "Frontend",
+        "mobile": "Mobile",
+        "backend": "Backend",
+        "deploy": "Triển khai"
+      }
+    },
+    "testimonials": {
+      "title": "Khách hàng nói gì",
+      "subtitle": "Phản hồi ngắn từ các dự án gần đây — minh chứng cho chất lượng giao tiếp và bàn giao.",
+      "items": {
+        "a": {
+          "quote": "Team làm việc rõ ràng, milestone đúng hẹn. Landing mới giúp chúng tôi tăng đăng ký demo.",
+          "author": "Minh Anh",
+          "role": "CEO, startup FinTech"
+        },
+        "b": {
+          "quote": "App Flutter mượt, tích hợp Firebase ổn định. Rất hài lòng với quy trình design-trước-code.",
+          "author": "Quốc Huy",
+          "role": "Product Owner, HealthTech"
+        },
+        "c": {
+          "quote": "Dashboard báo cáo dễ đọc, dev hỗ trợ sau go-live nhiệt tình.",
+          "author": "Thu Trang",
+          "role": "COO, retail SME"
+        }
+      }
+    },
+    "cta": {
+      "title": "Có ý tưởng?",
+      "titleHighlight": " Cùng hiện thực hoá.",
+      "subtitle": "Đặt lịch trao đổi ngắn hoặc gửi brief — chúng tôi phản hồi trong 24h làm việc.",
+      "primary": "Liên hệ ngay",
+      "secondary": "Đặt lịch meeting"
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Dịch vụ",
+    "title": "Giải pháp end-to-end cho sản phẩm số",
+    "intro": "Từ ý tưởng, thiết kế, phát triển đến triển khai — linh hoạt theo giai đoạn và ngân sách của bạn.",
+    "scopeTitle": "Phạm vi",
+    "pricingTitle": "Báo giá tham khảo",
+    "pricingNote": "Số liệu mang tính tham khảo; báo giá chính xác sau khi thu thập yêu cầu.",
+    "faqTitle": "Câu hỏi thường gặp",
+    "ctaTitle": "Sẵn sàng bắt đầu?",
+    "ctaSubtitle": "Gửi brief hoặc đặt lịch gọi ngắn — không ràng buộc.",
+    "ctaButton": "Liên hệ",
+    "contactQuote": "Liên hệ báo giá",
+    "cards": {
+      "web": {
+        "title": "Phát triển Website",
+        "description": "Landing page, website doanh nghiệp, dashboard, CMS và e-commerce hiện đại.",
+        "includes": [
+          "Landing Page",
+          "Website công ty",
+          "Dashboard",
+          "CMS",
+          "E-commerce",
+          "Hệ thống quản trị"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile App",
+        "description": "Ứng dụng Flutter đa nền tảng, tích hợp API và Firebase.",
+        "includes": [
+          "Flutter",
+          "Android / iOS",
+          "Tích hợp API",
+          "Firebase",
+          "Push notification"
+        ]
+      },
+      "uiux": {
+        "title": "UI/UX Design",
+        "description": "Trải nghiệm người dùng rõ ràng, design system và prototype tương tác.",
+        "includes": [
+          "Wireframe",
+          "Prototype",
+          "Design system",
+          "UI responsive",
+          "Figma"
+        ]
+      },
+      "backend": {
+        "title": "Backend & Cloud",
+        "description": "API RESTful, xác thực, cơ sở dữ liệu và triển khai cloud an toàn.",
+        "includes": [
+          "REST API",
+          "Authentication",
+          "Database",
+          "Cloud deploy",
+          "Payment"
+        ]
+      }
+    },
+    "pricing": {
+      "starter": {
+        "name": "Khởi đầu",
+        "price": "Từ 15 triệu",
+        "description": "Landing hoặc site giới thiệu gọn, go-live nhanh.",
+        "features": ["1–3 trang", "Responsive", "SEO cơ bản", "1 vòng chỉnh sửa"]
+      },
+      "pro": {
+        "name": "Chuyên nghiệp",
+        "price": "Từ 45 triệu",
+        "description": "Website / app nhỏ có CMS, form, tích hợp bên thứ ba.",
+        "features": [
+          "Nhiều module",
+          "CMS / Admin",
+          "Analytics",
+          "Hỗ trợ 30 ngày"
+        ]
+      },
+      "enterprise": {
+        "name": "Doanh nghiệp",
+        "price": "Báo giá",
+        "description": "Hệ thống phức tạp, SLA và tích hợp nội bộ.",
+        "features": [
+          "Kiến trúc mở rộng",
+          "Bảo mật",
+          "DevOps",
+          "Ưu tiên hỗ trợ"
+        ]
+      }
+    },
+    "faq": [
+      {
+        "q": "Thời gian triển khai trung bình?",
+        "a": "Landing thường 2–4 tuần; sản phẩm lớn hơn 6–12 tuần tùy phạm vi và phản hồi."
+      },
+      {
+        "q": "Có hỗ trợ bảo trì sau launch?",
+        "a": "Có các gói bảo trì theo tháng: cập nhật dependency, monitoring, sửa lỗi nhỏ."
+      },
+      {
+        "q": "Tôi đã có design Figma, có giảm chi phí không?",
+        "a": "Có — giai đoạn UI rút ngắn; báo giá sau khi review file và component."
+      },
+      {
+        "q": "Thanh toán thế nào?",
+        "a": "Thường chia 30% khởi động, các milestone theo tiến độ, phần còn lại khi bàn giao."
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Portfolio",
+    "subtitle": "Một phần dự án đã công bố — từ web, app đến dashboard và tái thiết kế trải nghiệm.",
+    "filterAll": "Tất cả"
+  },
+  "projectDetail": {
+    "back": "Quay lại portfolio",
+    "problem": "Vấn đề",
+    "solution": "Giải pháp",
+    "gallery": "Thư viện ảnh",
+    "results": "Kết quả",
+    "similarCta": "Bắt đầu dự án tương tự"
+  },
+  "aboutPage": {
+    "title": "Về chúng tôi",
+    "intro1": "Chúng tôi là studio phát triển phần mềm tập trung vào trải nghiệm người dùng và hiệu suất. Đối tác của startup và SME muốn ship sản phẩm nhanh nhưng vẫn chỉn chu — từ landing page, app mobile đến hệ thống nội bộ.",
+    "intro2": "Bạn có thể thay đoạn này bằng câu chuyện cá nhân hoặc team thật của mình; cấu trúc trang đã sẵn sàng cho nội dung dài hơn hoặc ảnh profile.",
+    "skillsTitle": "Kỹ năng",
+    "skills": ["Flutter", "React", "Next.js", "Node.js", "UI/UX", "PostgreSQL"],
+    "experienceTitle": "Kinh nghiệm",
+    "experienceItems": [
+      "3+ năm phát triển web & mobile",
+      "20+ dự án đã giao",
+      "Lĩnh vực: SaaS, e-commerce, nội bộ doanh nghiệp, MVP startup"
+    ],
+    "workingTitle": "Cách làm việc",
+    "workingItems": [
+      "Clean code",
+      "Responsive design",
+      "Kiến trúc mở rộng",
+      "Đúng deadline"
+    ],
+    "cta": "Làm việc cùng nhau"
+  },
+  "contactPage": {
+    "title": "Liên hệ",
+    "subtitle": "Cho chúng tôi biết về dự án của bạn. Chúng tôi sẽ phản hồi với lịch và hướng tiếp theo phù hợp.",
+    "emailLabel": "Email",
+    "phoneLabel": "Điện thoại",
+    "locationLabel": "Địa điểm"
+  },
+  "form": {
+    "name": "Họ tên",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "projectType": "Loại dự án",
+    "budget": "Ngân sách dự kiến",
+    "timeline": "Timeline mong muốn",
+    "message": "Mô tả ngắn",
+    "placeholderMessage": "Mục tiêu dự án, tham chiếu, ràng buộc kỹ thuật...",
+    "selectPlaceholder": "Chọn",
+    "submit": "Gửi yêu cầu",
+    "submitting": "Đang gửi…",
+    "success": "Đã gửi thành công. Chúng tôi sẽ phản hồi sớm.",
+    "error": "Gửi không thành công. Thử lại hoặc email trực tiếp.",
+    "errors": {
+      "name": "Nhập họ tên",
+      "email": "Email không hợp lệ",
+      "phone": "Số điện thoại",
+      "projectType": "Chọn loại dự án",
+      "budget": "Chọn ngân sách",
+      "timeline": "Chọn timeline",
+      "message": "Mô tả thêm ít nhất 10 ký tự"
+    },
+    "projectTypes": {
+      "web": "Website",
+      "mobile": "Mobile app",
+      "uiux": "UI/UX",
+      "backend": "Backend / API",
+      "other": "Khác"
+    },
+    "budgets": {
+      "under15": "< 15 triệu",
+      "15-45": "15 – 45 triệu",
+      "45-100": "45 – 100 triệu",
+      "100+": "> 100 triệu / cần tư vấn"
+    },
+    "timelines": {
+      "asap": "Càng sớm càng tốt",
+      "1m": "Trong 1 tháng",
+      "2-3m": "2 – 3 tháng",
+      "flex": "Linh hoạt"
+    }
+  },
+  "projects": {
+    "items": {
+      "ecommerce-analytics": {
+        "title": "Dashboard thương mại điện tử",
+        "shortDescription": "Bảng điều khiển real-time cho chủ shop theo dõi đơn hàng và tồn kho.",
+        "description": "Hệ thống dashboard tập trung vào KPI bán hàng, tích hợp biểu đồ và cảnh báo tồn kho.",
+        "timeline": "8 tuần",
+        "problem": "Khách hàng cần theo dõi nhiều kênh bán hàng nhưng dữ liệu nằm rải rác trên spreadsheet.",
+        "solution": "Xây dựng dashboard thống nhất với ETL nhẹ, biểu đồ tương tác và phân quyền theo vai trò.",
+        "results": "Giảm 40% thời gian đối soát hàng ngày; ra quyết định nhập hàng nhanh hơn nhờ cảnh báo tự động."
+      },
+      "fitness-companion-app": {
+        "title": "App fitness đa nền tảng",
+        "shortDescription": "Ứng dụng tập luyện cá nhân hoá với theo dõi tiến độ và thông báo đẩy.",
+        "description": "Mobile app Flutter kết nối backend Node.js, đồng bộ lịch tập và dinh dưỡng.",
+        "timeline": "12 tuần",
+        "problem": "Người dùng muốn một app duy nhất cho lịch tập, nhắc nhở và cộng đồng nhỏ.",
+        "solution": "Thiết kế luồng onboarding ngắn, tích hợp push notification và đồng bộ cloud.",
+        "results": "Tỷ lệ giữ chân 7 ngày tăng; phản hồi tích cực về UX và tốc độ mượt."
+      },
+      "saas-landing-rebrand": {
+        "title": "Landing SaaS & hệ nhận diện",
+        "shortDescription": "Tái thiết kế landing page và design system cho sản phẩm B2B.",
+        "description": "UI/UX mới, prototype Figma và triển khai Next.js với animation nhẹ.",
+        "timeline": "5 tuần",
+        "problem": "Trang hiện tại không truyền tải giá trị sản phẩm và tỷ lệ chuyển đổi thấp.",
+        "solution": "Làm lại information architecture, hero rõ ràng, social proof và CTA nhất quán.",
+        "results": "Tăng demo booking sau 2 tuần go-live; brand nhất quán trên marketing."
+      },
+      "booking-portal-web": {
+        "title": "Cổng đặt lịch dịch vụ",
+        "shortDescription": "Website đặt chỗ với thanh toán và quản trị lịch cho SME.",
+        "description": "Full-stack Next.js, tích hợp cổng thanh toán và panel admin.",
+        "timeline": "10 tuần",
+        "problem": "Doanh nghiệp xử lý booking qua điện thoại, dễ trùng lịch và mất lead.",
+        "solution": "Form đặt lịch thông minh, thanh toán cọc online, admin xem lịch theo nhân sự.",
+        "results": "Giảm cuộc gọi hỏi lịch; số lượng booking online tăng rõ rệt."
+      },
+      "corporate-identity": {
+        "title": "Quantum Corporate Identity",
+        "shortDescription": "Trải nghiệm landing page tiên phong cho các tập đoàn công nghệ.",
+        "description": "Chúng tôi đã xây dựng một trải nghiệm thương hiệu toàn diện, nhấn mạnh vào tốc độ, bảo mật và khả năng mở rộng. Website sử dụng các yếu tố 3D thời gian thực.",
+        "timeline": "4 tuần",
+        "problem": "Các công ty công nghệ thường có dịch vụ phức tạp khó giải thích, dẫn đến tỷ lệ thoát trang cao.",
+        "solution": "Áp dụng ngôn ngữ 'Quantum Design' sử dụng nền Three.js và các vi tương tác dẫn dắt người dùng.",
+        "results": "Tăng 45% thời gian phiên truy cập và cải thiện chất lượng lead từ đối tác doanh nghiệp."
+      },
+      "product-catalog": {
+        "title": "Danh mục sản phẩm Omni-Channel",
+        "shortDescription": "Nền tảng quản lý và trưng bày sản phẩm liền mạch.",
+        "description": "Hệ thống trung tâm xử lý hàng chục nghìn SKU với tốc độ tìm kiếm cực nhanh và hình ảnh 360 độ.",
+        "timeline": "6 tuần",
+        "problem": "Kho hàng lớn gây khó khăn cho việc tải trang và điều hướng, khiến khách hàng khó tìm sản phẩm.",
+        "solution": "Hệ thống lập chỉ mục tùy chỉnh với Next.js Server Components và bộ lọc động.",
+        "results": "Thời gian quản lý kho giảm 60%, tỷ lệ chuyển đổi tăng 22%."
+      },
+      "fashion-brand": {
+        "title": "Aura: Xưởng may kỹ thuật số",
+        "shortDescription": "Sự giao thoa giữa thời trang xa xỉ và nghệ thuật kỹ thuật số.",
+        "description": "Cửa hàng kỹ thuật số nhập vai với mọi tương tác mượt mà như dòng chảy của vải vóc.",
+        "timeline": "5 tuần",
+        "problem": "Thương hiệu xa xỉ thường thấy nền tảng số quá cứng nhắc, làm mất đi uy tín thương hiệu.",
+        "solution": "Tích hợp hiệu ứng Liquid Mesh tạo sinh và các shader chuyển cảnh tùy chỉnh.",
+        "results": "Chiến dịch đạt 2M+ lượt tiếp cận và cháy hàng trong vòng 48 giờ."
+      },
+      "ordering-app": {
+        "title": "SwiftOrder Pro",
+        "shortDescription": "Ứng dụng giao hàng với logistics thông minh.",
+        "description": "Giải pháp di động toàn diện cho đặt hàng theo yêu cầu, tích hợp dự đoán AI.",
+        "timeline": "8 tuần",
+        "problem": "Người dùng đòi hỏi sự tức thì nhưng app gặp lag và dự báo thời gian sai.",
+        "solution": "Xây dựng native trên Flutter với socket thời gian thực để theo dõi đơn hàng chính xác.",
+        "results": "Đánh giá đạt 4.9 sao và thời gian giao hàng giảm 12%."
+      },
+      "driver-app": {
+        "title": "Hệ thống DriveConnect",
+        "shortDescription": "Theo dõi tài xế và đặt chuyến thời gian thực.",
+        "description": "Nền tảng quản lý hậu cần tài xế và đặt chuyến theo yêu cầu.",
+        "timeline": "10 tuần",
+        "problem": "Điều phối không hiệu quả dẫn đến thời gian chờ dài và chi phí cao.",
+        "solution": "Tích hợp Google Maps API để tối ưu lộ trình và hiển thị đội xe real-time.",
+        "results": "Giảm 30% thời gian chờ và cải thiện hiệu suất tài xế."
+      },
+      "note-app": {
+        "title": "Ứng dụng Ghi chú Nexus",
+        "shortDescription": "Ghi chú thông minh với logic tổ chức khoa học.",
+        "description": "Công cụ ghi chú tinh tế cho các chuyên gia và nhà sáng tạo.",
+        "timeline": "6 tuần",
+        "problem": "Ghi chú kỹ thuật số thường lộn xộn và khó tìm kiếm lại thông tin.",
+        "solution": "Áp dụng tagging logic và giao diện tối giản để tập trung tối đa.",
+        "results": "Nhận phản hồi tích cực về tính ổn định và khả năng đồng bộ."
+      },
+      "ecommerce-platform": {
+        "title": "Sàn TMĐT MarketSphere",
+        "shortDescription": "Nền tảng thương mại điện tử toàn cầu.",
+        "description": "Hệ thống thương mại điện tử tỷ lệ chuyển đổi cao, tải trang dưới 1 giây.",
+        "timeline": "12 tuần",
+        "problem": "Mở rộng quy mô thường gây ra nghẽn hiệu năng hệ thống.",
+        "solution": "Kiến trúc Frontend Serverless kết hợp Backend PostgreSQL mạnh mẽ.",
+        "results": "Không downtime trong đợt cao điểm và tốc độ tải trang cực nhanh."
+      },
+      "language-learning": {
+        "title": "Ứng dụng LingoPulse",
+        "shortDescription": "Học ngoại ngữ thông qua game hóa.",
+        "description": "Ứng dụng tương tác giúp việc học ngôn ngữ trở nên gây nghiện và hiệu quả.",
+        "timeline": "9 tuần",
+        "problem": "Người dùng mất động lực trong hành trình học ngôn ngữ dài hạn.",
+        "solution": "Kết hợp AI để game hóa quá trình học và các bài học nhỏ gọn.",
+        "results": "Tăng đáng kể lượng người dùng hoạt động hàng ngày."
+      }
+    }
+  }
+}
