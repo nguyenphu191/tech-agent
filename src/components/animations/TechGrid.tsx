@@ -44,6 +44,7 @@ function GridPoints() {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
+          args={[points, 3]}
           count={points.length / 3}
           array={points}
           itemSize={3}
@@ -67,10 +68,10 @@ export function TechGrid() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="absolute inset-0 -z-10 bg-black" />;
+  if (!mounted) return <div className="absolute inset-0 -z-10 bg-background" />;
 
   return (
-    <div className="absolute inset-0 -z-10 bg-black">
+    <div className="absolute inset-0 -z-10 bg-background">
       <Canvas camera={{ position: [0, 10, 20], fov: 75 }}>
         <fog attach="fog" args={["#000", 10, 50]} />
         <ambientLight intensity={0.5} />

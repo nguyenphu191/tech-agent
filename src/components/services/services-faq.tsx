@@ -23,7 +23,7 @@ export function ServicesFaq({ items }: { items: FaqItem[] }) {
         <AccordionItem
           key={item.q}
           value={`item-${i}`}
-          className="rounded-xl border border-white/10 bg-card/30 px-4"
+          className="rounded-xl border border-border bg-card/30 px-4"
         >
           <AccordionHeader>
             <AccordionTrigger

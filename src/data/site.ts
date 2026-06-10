@@ -13,7 +13,6 @@ export const siteConfig = {
 export const navKeys = [
   { href: "/services", labelKey: "services" },
   { href: "/projects", labelKey: "projects" },
-  { href: "/demos", labelKey: "demos" },
   { href: "/about", labelKey: "about" },
   { href: "/contact", labelKey: "contact" },
 ] as const;

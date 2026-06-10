@@ -25,8 +25,8 @@ export const serviceList: ServiceDef[] = [
       "/images/services/web-2.webp",
       "/images/services/web-3.webp",
     ],
-    color: "from-blue-500 to-purple-600",
-    gradient: "bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-blue-600/20",
+    color: "from-indigo-500 to-violet-600",
+    gradient: "bg-gradient-to-br from-indigo-500/20 via-violet-500/20 to-indigo-600/20",
   },
   {
     id: "mobile",
@@ -37,7 +37,7 @@ export const serviceList: ServiceDef[] = [
       "/images/services/mobile-2.webp",
       "/images/services/mobile-3.webp",
     ],
-    color: "from-emerald-500 to-cyan-600",
+    color: "from-emerald-500 to-teal-600",
     gradient: "bg-gradient-to-br from-emerald-500/20 via-teal-500/20 to-cyan-600/20",
   },
   {
@@ -49,8 +49,8 @@ export const serviceList: ServiceDef[] = [
       "/images/services/uiux-2.webp",
       "/images/services/uiux-3.webp",
     ],
-    color: "from-orange-500 to-pink-600",
-    gradient: "bg-gradient-to-br from-orange-500/20 via-pink-500/20 to-rose-600/20",
+    color: "from-violet-500 to-fuchsia-600",
+    gradient: "bg-gradient-to-br from-violet-500/20 via-fuchsia-500/20 to-fuchsia-600/20",
   },
   {
     id: "backend",
@@ -61,8 +61,8 @@ export const serviceList: ServiceDef[] = [
       "/images/services/backend-2.webp",
       "/images/services/backend-3.webp",
     ],
-    color: "from-blue-500 to-indigo-600",
-    gradient: "bg-gradient-to-br from-blue-500/20 via-indigo-500/20 to-blue-600/20",
+    color: "from-slate-600 to-indigo-700",
+    gradient: "bg-gradient-to-br from-slate-500/20 via-indigo-600/20 to-indigo-800/20",
   },
 ];
 

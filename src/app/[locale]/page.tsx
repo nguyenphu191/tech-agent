@@ -8,7 +8,7 @@ import { ProcessSection } from "@/components/sections/process-section";
 import { TechStackSection } from "@/components/sections/tech-stack-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { CtaSection } from "@/components/sections/cta-section";
-import { getFeaturedProjects } from "@/data/projects";
+import { getFeaturedWorks } from "@/data/works";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
-  const featured = await getFeaturedProjects(locale, 4);
+  const featured = await getFeaturedWorks(locale, 4);
 
   return (
     <>

@@ -1,10 +1,10 @@
-import { getLocalizedProjects } from "@/data/projects";
+import { getWorks } from "@/data/works";
 import { ProjectsClient } from "./projects-client";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export default async function ProjectsPage({ params }: Props) {
   const { locale } = await params;
-  const projects = await getLocalizedProjects(locale);
-  return <ProjectsClient projects={projects} />;
+  const items = await getWorks(locale);
+  return <ProjectsClient items={items} />;
 }

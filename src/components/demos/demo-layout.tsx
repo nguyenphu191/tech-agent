@@ -3,19 +3,18 @@
 import React from 'react';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { SiteHeader } from '@/components/layout/site-header';
-import { SiteFooter } from '@/components/layout/site-footer';
 
 interface DemoLayoutProps {
   title: string;
   description?: string;
   children: React.ReactNode;
-  gradient?: string; // Tailwind gradient class
+  gradient?: string;
 }
 
 /**
  * DemoLayout - Shared wrapper for all demo pages
- * Provides consistent header, footer, breadcrumb, and layout
+ * Provides consistent breadcrumb, hero, and layout
+ * Header/footer are rendered by [locale]/layout.tsx
  */
 export function DemoLayout({
   title,
@@ -24,31 +23,28 @@ export function DemoLayout({
   gradient = 'from-blue-600 to-cyan-600',
 }: DemoLayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-black text-white">
-      {/* Header */}
-      <SiteHeader />
-
+    <div className="min-h-screen flex flex-col">
       {/* Breadcrumb */}
-      <div className="sticky top-16 z-40 border-b border-white/10 bg-black/50 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-12 flex items-center gap-2 text-sm">
-          <Link href="/demos" className="text-white/60 hover:text-white transition-colors">
+      <div className="sticky top-16 z-40 border-b border-border bg-background/80 backdrop-blur-md">
+        <div className="mx-auto flex h-12 max-w-7xl items-center gap-2 px-4 text-sm sm:px-6 lg:px-8">
+          <Link href="/demos" className="text-muted-foreground transition-colors hover:text-foreground">
             Demos
           </Link>
-          <ChevronRight className="w-4 h-4 text-white/40" />
-          <span className="text-white">{title}</span>
+          <ChevronRight className="h-4 w-4 text-muted-foreground/40" />
+          <span className="text-foreground">{title}</span>
         </div>
       </div>
 
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <div className={`bg-gradient-to-br ${gradient} bg-opacity-10 border-b border-white/10 py-12`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+        <div className={`bg-gradient-to-br ${gradient} border-b border-border py-12`}>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
               {title}
             </h1>
             {description && (
-              <p className="text-white/70 text-lg max-w-2xl">
+              <p className="mt-2 max-w-2xl text-lg text-muted-foreground">
                 {description}
               </p>
             )}
@@ -56,13 +52,10 @@ export function DemoLayout({
         </div>
 
         {/* Demo Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           {children}
         </div>
       </main>
-
-      {/* Footer */}
-      <SiteFooter />
     </div>
   );
 }

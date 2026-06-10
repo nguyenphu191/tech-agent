@@ -99,9 +99,9 @@ function ToastItem({
   const [isExiting, setIsExiting] = useState(false);
 
   const bgColor = {
-    success: 'bg-green-500/90',
-    error: 'bg-red-500/90',
-    info: 'bg-blue-500/90',
+    success: 'bg-success/90',
+    error: 'bg-destructive/90',
+    info: 'bg-primary/90',
   }[toast.type];
 
   const Icon = {
@@ -121,7 +121,7 @@ function ToastItem({
         pointer-events-auto
         flex items-start gap-3 
         ${bgColor} 
-        text-white rounded-lg 
+        text-primary-foreground rounded-lg 
         px-4 py-3 
         shadow-lg backdrop-blur-sm
         transform transition-all duration-150
@@ -133,7 +133,7 @@ function ToastItem({
       <p className="text-sm font-medium flex-1">{toast.message}</p>
       <button
         onClick={handleClose}
-        className="text-white/70 hover:text-white transition-colors flex-shrink-0 ml-2"
+        className="text-primary-foreground/70 hover:text-primary-foreground transition-colors flex-shrink-0 ml-2"
       >
         <X className="w-4 h-4" />
       </button>
@@ -163,11 +163,11 @@ export function FormFeedback({ status, message }: FormFeedbackProps) {
   const getIcon = () => {
     switch (status) {
       case 'loading':
-        return <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />;
+        return <div className="w-5 h-5 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />;
       case 'success':
-        return <CheckCircle className="w-5 h-5 text-green-400" />;
+        return <CheckCircle className="w-5 h-5 text-success" />;
       case 'error':
-        return <AlertCircle className="w-5 h-5 text-red-400" />;
+        return <AlertCircle className="w-5 h-5 text-destructive" />;
       default:
         return null;
     }
@@ -176,13 +176,13 @@ export function FormFeedback({ status, message }: FormFeedbackProps) {
   const getBgColor = () => {
     switch (status) {
       case 'success':
-        return 'bg-green-500/10 border-green-500/20';
+        return 'bg-success/10 border-success/20';
       case 'error':
-        return 'bg-red-500/10 border-red-500/20';
+        return 'bg-destructive/10 border-destructive/20';
       case 'loading':
-        return 'bg-blue-500/10 border-blue-500/20';
+        return 'bg-primary/10 border-primary/20';
       default:
-        return 'bg-white/5 border-white/10';
+        return 'bg-muted border-border';
     }
   };
 
@@ -209,7 +209,7 @@ export function FormFeedback({ status, message }: FormFeedbackProps) {
       `}
     >
       {getIcon()}
-      <p className="text-sm text-white/80">{getText()}</p>
+      <p className="text-sm text-foreground">{getText()}</p>
     </div>
   );
 }

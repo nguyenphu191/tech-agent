@@ -290,8 +290,8 @@ export function ContactForm() {
 
       <Button
         type="submit"
+        variant="cta"
         disabled={isSubmitting || status === "loading" || status === "success"}
-        className="w-full rounded-full sm:w-auto"
       >
         {status === "loading" ? t("submitting") : t("submit")}
       </Button>

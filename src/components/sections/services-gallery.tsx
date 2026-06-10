@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/safe-image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ServiceGalleryProps {
@@ -45,24 +45,26 @@ export function ServiceGallery({ images, title, color }: ServiceGalleryProps) {
       <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-muted to-muted/50">
         {/* Background blur effect */}
         <div className="absolute inset-0 opacity-50">
-          <img
+          <SafeImage
             src={images[currentIndex]}
             alt={`${title} ${currentIndex + 1}`}
+            fill
+            loading="lazy"
             className="h-full w-full object-cover blur-xl"
+            fallback="/images/default.png"
           />
         </div>
 
         {/* Main image with animation */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative h-full w-full">
-            <img
+            <SafeImage
               src={images[currentIndex]}
               alt={`${title} ${currentIndex + 1}`}
+              fill
+              loading="lazy"
               className="h-full w-full object-cover transition-all duration-700 ease-out"
-              style={{
-                opacity: 1,
-                transform: "scale(1)",
-              }}
+              fallback="/images/default.png"
             />
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />

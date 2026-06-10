@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale, getTranslations } from "next-intl/server
 import { routing, type AppLocale } from "@/i18n/routing";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,7 @@ export async function generateMetadata({
                 ? "de_DE"
                 : "zh_CN",
       siteName: t("siteName"),
+      images: [{ url: `${siteUrl}/og-default.svg`, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
@@ -95,9 +97,11 @@ export default async function LocaleLayout({
         className={`min-h-full flex flex-col font-sans ${locale === "zh" ? "font-[family-name:var(--font-noto-sc)]" : ""}`}
       >
         <NextIntlClientProvider messages={messages}>
-          <SiteHeader />
-          <div className="flex flex-1 flex-col">{children}</div>
-          <SiteFooter />
+          <ThemeProvider>
+            <SiteHeader />
+            <div className="flex flex-1 flex-col">{children}</div>
+            <SiteFooter />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -4,7 +4,7 @@ import React, { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-function Particles({ count = 100 }) {
+function Particles({ count = 100, color = '#ffffff', opacity = 0.8 }) {
   const mesh = useRef<THREE.Points>(null);
   
   const particles = useMemo(() => {
@@ -32,7 +32,6 @@ function Particles({ count = 100 }) {
         pos[i3 + 1] += particles.velocities[i3 + 1];
         pos[i3 + 2] += particles.velocities[i3 + 2];
 
-        // Boundary check
         if (Math.abs(pos[i3]) > 20) particles.velocities[i3] *= -1;
         if (Math.abs(pos[i3 + 1]) > 20) particles.velocities[i3 + 1] *= -1;
         if (Math.abs(pos[i3 + 2]) > 20) particles.velocities[i3 + 2] *= -1;
@@ -47,36 +46,39 @@ function Particles({ count = 100 }) {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
+          args={[particles.positions, 3]}
           count={particles.positions.length / 3}
           array={particles.positions}
           itemSize={3}
         />
       </bufferGeometry>
       <pointsMaterial
-        color="#ffffff"
+        color={color}
         size={0.15}
         sizeAttenuation={true}
         transparent
-        opacity={0.8}
+        opacity={opacity}
         blending={THREE.AdditiveBlending}
       />
     </points>
   );
 }
 
-export function ParticleNetwork() {
+export function ParticleNetwork({ variant = 'dark' }: { variant?: 'light' | 'dark' }) {
   const [mounted, setMounted] = React.useState(false);
   
   React.useEffect(() => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="absolute inset-0 -z-10 bg-[#0a0a0a]" />;
+  const isLight = variant === 'light';
+
+  if (!mounted) return <div className="absolute inset-0 -z-10" />;
 
   return (
-    <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+    <div className={`absolute inset-0 -z-10 ${isLight ? 'bg-background' : 'bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]'}`}>
       <Canvas camera={{ position: [0, 0, 25], fov: 60 }}>
-        <Particles count={200} />
+        <Particles count={200} color={isLight ? '#6366F1' : '#ffffff'} opacity={isLight ? 0.15 : 0.8} />
       </Canvas>
     </div>
   );

@@ -26,6 +26,10 @@
     "servicesPage": "Services (page)",
     "tagline": "Agence Web & Mobile",
     "locationValue": "Hô Chi Minh-Ville, Vietnam",
+    "newsletterLabel": "Restez informé",
+    "newsletterPlaceholder": "votre@email.com",
+    "newsletterError": "Veuillez entrer un email valide",
+    "newsletterSuccess": "Vous êtes abonné !",
     "copyright": "© {year} Studio Dev. Tous droits réservés."
   },
   "categories": {
@@ -243,7 +247,12 @@
   "projectsPage": {
     "title": "Portfolio",
     "subtitle": "Réalisations publiques — web, apps, dashboards et refontes UX.",
-    "filterAll": "Tous"
+    "filterAll": "Tous",
+    "caseStudies": "Études de cas",
+    "interactiveDemos": "Démos interactives",
+    "emptyTitle": "Aucun projet trouvé",
+    "emptyDescription": "Aucun projet ne correspond à la catégorie sélectionnée. Essayez un autre filtre.",
+    "showAll": "Voir tous les projets"
   },
   "projectDetail": {
     "back": "Retour au portfolio",

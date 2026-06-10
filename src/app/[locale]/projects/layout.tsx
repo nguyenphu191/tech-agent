@@ -9,12 +9,14 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   return {
     title: t("projectsTitle"),
     description: t("projectsDescription"),
     openGraph: {
       title: `${t("projectsTitle")} — ${t("siteName")}`,
       description: t("projectsDescription"),
+      images: [{ url: `${siteUrl}/og-projects.svg`, width: 1200, height: 630 }],
     },
   };
 }

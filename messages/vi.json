@@ -26,6 +26,10 @@
     "servicesPage": "Dịch vụ (trang)",
     "tagline": "Web & Mobile Agency",
     "locationValue": "Thành phố Hồ Chí Minh, Việt Nam",
+    "newsletterLabel": "Cập nhật tin tức",
+    "newsletterPlaceholder": "email@cuaban.com",
+    "newsletterError": "Vui lòng nhập email hợp lệ",
+    "newsletterSuccess": "Bạn đã đăng ký thành công!",
     "copyright": "© {year} Studio Dev. Đã đăng ký bản quyền."
   },
   "categories": {
@@ -251,9 +255,14 @@
     ]
   },
   "projectsPage": {
-    "title": "Portfolio",
-    "subtitle": "Một phần dự án đã công bố — từ web, app đến dashboard và tái thiết kế trải nghiệm.",
-    "filterAll": "Tất cả"
+    "title": "Dự án",
+    "subtitle": "Các dự án đã chọn — web, ứng dụng, dashboard và cải tiến UX.",
+    "filterAll": "Tất cả",
+    "caseStudies": "Nghiên cứu điển hình",
+    "interactiveDemos": "Demo tương tác",
+    "emptyTitle": "Không tìm thấy dự án",
+    "emptyDescription": "Không có dự án nào phù hợp với danh mục đã chọn. Hãy thử bộ lọc khác.",
+    "showAll": "Hiện tất cả dự án"
   },
   "projectDetail": {
     "back": "Quay lại portfolio",

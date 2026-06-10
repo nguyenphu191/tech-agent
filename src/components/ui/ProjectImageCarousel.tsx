@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/safe-image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -13,13 +13,6 @@ interface ProjectImageCarouselProps {
 export function ProjectImageCarousel({ images, interval = 5000 }: ProjectImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNext();
-    }, interval);
-    return () => clearInterval(timer);
-  }, [currentIndex, interval]);
-
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
@@ -27,6 +20,13 @@ export function ProjectImageCarousel({ images, interval = 5000 }: ProjectImageCa
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [interval, images.length]);
 
   return (
     <div className="relative group aspect-[21/9] max-h-[500px] w-full overflow-hidden rounded-3xl border border-border">
@@ -39,13 +39,14 @@ export function ProjectImageCarousel({ images, interval = 5000 }: ProjectImageCa
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="absolute inset-0"
         >
-          <Image
+          <SafeImage
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
             fill
             priority
             className="object-cover"
             sizes="(max-width: 1200px) 100vw, 1200px"
+            fallback="/images/default.png"
           />
         </motion.div>
       </AnimatePresence>
@@ -74,7 +75,7 @@ export function ProjectImageCarousel({ images, interval = 5000 }: ProjectImageCa
             key={i}
             onClick={() => setCurrentIndex(i)}
             className={`w-2 h-2 rounded-full transition-all ${
-              i === currentIndex ? "bg-primary w-6" : "bg-white/30"
+              i === currentIndex ? "bg-primary w-6" : "bg-muted-foreground/30"
             }`}
           />
         ))}

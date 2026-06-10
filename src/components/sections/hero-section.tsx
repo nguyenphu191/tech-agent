@@ -50,7 +50,7 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 shadow-lg shadow-primary/25"
+              variant="cta"
             >
               <Link href="/contact">
                 {t("primaryCta")}
@@ -61,7 +61,7 @@ export function HeroSection() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-border bg-secondary backdrop-blur-sm hover:bg-secondary/80 text-secondary-foreground"
+              className="rounded-full"
             >
               <Link href="/projects">{t("secondaryCta")}</Link>
             </Button>
@@ -119,7 +119,7 @@ function HeroVisual({ reduceMotion }: { reduceMotion: boolean }) {
             ease: "easeInOut",
           }}
         >
-          <p className="text-xs font-medium text-primary-foreground/90">
+          <p className="text-xs font-medium text-foreground">
             {t("perfLabel")}
           </p>
           <p className="mt-1 text-2xl font-bold text-foreground">{t("perfScore")}</p>

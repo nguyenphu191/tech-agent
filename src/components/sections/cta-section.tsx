@@ -11,7 +11,7 @@ export function CtaSection() {
   return (
     <Reveal>
       <section className="px-4 pb-24 sm:px-6">
-        <div className="mx-auto max-w-6xl rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/20 via-card/80 to-accent/15 p-10 text-center shadow-xl shadow-primary/10 sm:p-14">
+        <div className="mx-auto max-w-6xl rounded-3xl border border-primary/25 bg-[var(--gradient-cta)] p-10 text-center shadow-xl shadow-primary/10 sm:p-14">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("title")}
             <span className="text-gradient">{t("titleHighlight")}</span>
@@ -23,7 +23,7 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 shadow-lg shadow-primary/25"
+              variant="cta"
             >
               <Link href="/contact">{t("primary")}</Link>
             </Button>
@@ -31,7 +31,7 @@ export function CtaSection() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-border bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              className="rounded-full"
             >
               <Link href="/contact">{t("secondary")}</Link>
             </Button>

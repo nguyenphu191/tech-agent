@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import { SafeImage } from "@/components/ui/safe-image";
 import { Reveal } from "@/components/motion/reveal";
 import { serviceList } from "@/data/services";
 
@@ -32,10 +33,13 @@ export function ServicesPreviewSection() {
                   <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-border hover:shadow-md hover:shadow-primary/5">
                     {/* Background image effect */}
                     <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-30">
-                      <img
+                      <SafeImage
                         src={s.images[0]}
                         alt={tc(`${s.id}.title`)}
+                        fill
+                        loading="lazy"
                         className="h-full w-full object-cover blur-sm"
+                        fallback="/images/default.png"
                       />
                     </div>
 
@@ -78,10 +82,14 @@ export function ServicesPreviewSection() {
                           key={idx}
                           className="h-8 w-8 flex-shrink-0 overflow-hidden rounded border border-border bg-muted"
                         >
-                          <img
+                          <SafeImage
                             src={img}
                             alt={`Preview ${idx + 1}`}
+                            width={32}
+                            height={32}
+                            loading="lazy"
                             className="h-full w-full object-cover"
+                            fallback="/images/default.png"
                           />
                         </div>
                       ))}
@@ -92,7 +100,7 @@ export function ServicesPreviewSection() {
             })}
           </div>
           <div className="mt-10 flex justify-center">
-            <Button asChild variant="outline" className="rounded-full">
+            <Button asChild variant="outline" className="rounded-full border-border">
               <Link href="/services">{t("viewAll")}</Link>
             </Button>
           </div>

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { getAllProjectSlugs } from "@/data/projects";
+import { getAllWorkSlugs } from "@/data/works";
 
 const base =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: path === "" ? 1 : 0.8,
       });
     }
-    for (const slug of getAllProjectSlugs()) {
+    for (const slug of getAllWorkSlugs()) {
       entries.push({
         url: `${base}${pathForLocale(locale, `/projects/${slug}`)}`,
         lastModified: new Date(),

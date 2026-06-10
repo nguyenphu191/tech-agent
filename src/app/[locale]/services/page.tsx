@@ -17,12 +17,14 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
   return {
     title: t("servicesTitle"),
     description: t("servicesDescription"),
     openGraph: {
       title: `${t("servicesTitle")} — ${t("siteName")}`,
       description: t("servicesDescription"),
+      images: [{ url: `${siteUrl}/og-services.svg`, width: 1200, height: 630 }],
     },
   };
 }
@@ -61,17 +63,19 @@ export default async function ServicesPage({ params }: Props) {
             const includes = tc.raw(`${s.id}.includes`) as string[];
             return (
               <Reveal key={s.id} delay={index * 0.03}>
-                <article
-                  id={s.id}
-                  className={`overflow-hidden rounded-3xl border border-border ${s.gradient} p-8 backdrop-blur-sm transition-all duration-300 hover:border-border hover:shadow-md hover:shadow-primary/5 md:p-10`}
-                >
+                <div className="group relative">
+                  <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${s.gradient} opacity-0 transition-opacity duration-300 group-hover:opacity-100`} style={{ filter: "blur(1px)" }} />
+                  <article
+                    id={s.id}
+                    className={`relative overflow-hidden rounded-3xl border border-border bg-card p-8 backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:shadow-primary/5 md:p-10 m-[1px]`}
+                  >
                   {/* Grid with image and content */}
                   <div className="grid gap-10 md:grid-cols-[1fr_1.2fr]">
                     {/* Content Section */}
                     <div className="flex flex-col justify-between">
                       <div>
-                        <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${s.color} bg-opacity-20 text-transparent bg-clip-text`}>
-                          <Icon className="h-7 w-7 text-white" />
+                        <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${s.color} text-white shadow-lg`}>
+                          <Icon className="h-7 w-7" />
                         </div>
                         <h2 className="mt-6 text-2xl font-bold">{tc(`${s.id}.title`)}</h2>
                         <p className="mt-3 text-muted-foreground">
@@ -115,6 +119,7 @@ export default async function ServicesPage({ params }: Props) {
                     </div>
                   </div>
                 </article>
+                </div>
               </Reveal>
             );
           })}
@@ -142,9 +147,16 @@ export default async function ServicesPage({ params }: Props) {
                         : "border-border bg-card shadow-sm"
                     }`}
                   >
-                    <h3 className="text-lg font-semibold">
-                      {tp(`${tierId}.name`)}
-                    </h3>
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="text-lg font-semibold">
+                        {tp(`${tierId}.name`)}
+                      </h3>
+                      {highlighted && (
+                        <span className="rounded-full bg-primary px-2.5 py-0.5 text-xs font-medium text-primary-foreground">
+                          Popular
+                        </span>
+                      )}
+                    </div>
                     <p className="mt-2 text-2xl font-bold text-gradient">
                       {tp(`${tierId}.price`)}
                     </p>
@@ -159,7 +171,7 @@ export default async function ServicesPage({ params }: Props) {
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="mt-8 w-full rounded-full">
+                    <Button asChild variant="cta" className="mt-8 w-full">
                       <Link href="/contact">{t("contactQuote")}</Link>
                     </Button>
                   </div>
@@ -185,7 +197,7 @@ export default async function ServicesPage({ params }: Props) {
           <p className="mx-auto mt-2 max-w-lg text-muted-foreground">
             {t("ctaSubtitle")}
           </p>
-          <Button asChild size="lg" className="mt-6 rounded-full">
+          <Button asChild size="lg" variant="cta" className="mt-6">
             <Link href="/contact">{t("ctaButton")}</Link>
           </Button>
         </div>

@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Sun, Moon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { useTheme } from "@/components/theme/theme-provider";
 import {
   Sheet,
   SheetContent,
@@ -27,6 +28,8 @@ export function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const { theme, toggle } = useTheme();
 
   return (
     <header
@@ -61,10 +64,19 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={toggle}
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary"
+            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          >
+            {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+          </button>
           <LocaleSwitcher />
           <Button
             asChild
-            className="hidden rounded-full shadow-lg shadow-primary/20 md:inline-flex"
+            variant="cta"
+            className="hidden md:inline-flex"
           >
             <Link href="/contact">{tHeader("cta")}</Link>
           </Button>
@@ -96,13 +108,21 @@ export function SiteHeader() {
                     {tNav(link.labelKey)}
                   </Link>
                 ))}
-                <div className="pt-2">
+                <div className="pt-2 flex items-center gap-3">
                   <LocaleSwitcher />
+                  <button
+                    type="button"
+                    onClick={toggle}
+                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                    aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                  >
+                    {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+                  </button>
                 </div>
                 <Link
                   href="/contact"
                   className={cn(
-                    buttonVariants({ className: "mt-4 rounded-full" }),
+                    buttonVariants({ variant: "cta", className: "mt-4" }),
                   )}
                 >
                   {tHeader("cta")}

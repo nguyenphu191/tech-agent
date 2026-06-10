@@ -7,9 +7,13 @@ export type DemoSlug =
   | 'corporate'
   | 'fashion'
   | 'ordering-app'
+  | 'ordering-app-demo'
   | 'product-catalog'
+  | 'product-catalog-demo'
   | 'driver-app'
+  | 'driver-app-demo'
   | 'note-app'
+  | 'note-app-demo'
   | 'ecommerce'
   | 'language-app';
 

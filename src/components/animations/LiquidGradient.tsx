@@ -36,10 +36,10 @@ export function LiquidGradient() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="absolute inset-0 -z-10 bg-[#050505]" />;
+  if (!mounted) return <div className="absolute inset-0 -z-10 bg-background" />;
 
   return (
-    <div className="absolute inset-0 -z-10 bg-[#050505]">
+    <div className="absolute inset-0 -z-10 bg-background">
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ambientLight intensity={0.2} />
         <pointLight position={[10, 10, 10]} color="#fff" intensity={1} />

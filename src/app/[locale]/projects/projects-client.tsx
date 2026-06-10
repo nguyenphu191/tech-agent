@@ -1,41 +1,148 @@
 "use client";
 
 import { useMemo, useState, useCallback, Suspense } from "react";
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/safe-image";
 import { useTranslations } from "next-intl";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { Link } from "@/i18n/navigation";
-import type { Project, ProjectCategory } from "@/data/projects";
+import { Button } from "@/components/ui/button";
+import type { WorkItem, WorkType } from "@/data/works";
 import { cn } from "@/lib/utils";
+import { SearchX, Sparkles } from "lucide-react";
 
-const filterIds: { id: ProjectCategory | "all"; labelKey: string }[] = [
+const typeFilters: { id: WorkType | "all"; labelKey: string }[] = [
   { id: "all", labelKey: "filterAll" },
-  { id: "web", labelKey: "web" },
-  { id: "mobile", labelKey: "mobile" },
-  { id: "uiux", labelKey: "uiux" },
-  { id: "dashboard", labelKey: "dashboard" },
+  { id: "case-study", labelKey: "caseStudies" },
+  { id: "demo", labelKey: "interactiveDemos" },
 ];
 
-function ProjectsContent({ projects }: { projects: Project[] }) {
+function getUniqueCategories(items: WorkItem[]): string[] {
+  return Array.from(new Set(items.map((w) => w.category))).sort();
+}
+
+function WorkCard({ item }: { item: WorkItem }) {
+  if (item.type === "demo") {
+    return (
+      <Link
+        href={`/projects/${item.slug}`}
+        className="group block overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:border-primary/35 hover:shadow-lg hover:shadow-primary/10"
+      >
+        <div
+          className={cn(
+            "relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] flex items-center justify-center bg-gradient-to-br",
+            item.gradient || "from-primary to-accent",
+          )}
+        >
+          <Sparkles className="h-16 w-16 text-white/40" />
+          <span className="absolute left-3 top-3 rounded-full bg-background/80 px-3 py-1 text-xs font-medium backdrop-blur-sm">
+            Interactive Demo
+          </span>
+        </div>
+        <div className="p-5">
+          <h2 className="text-lg font-semibold transition-colors group-hover:text-primary">
+            {item.title}
+          </h2>
+          <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+            {item.shortDescription}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <span className="rounded bg-secondary px-2 py-0.5 text-xs capitalize text-muted-foreground">
+              {item.category}
+            </span>
+          </div>
+        </div>
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      href={`/projects/${item.slug}`}
+      className="group mb-6 block break-inside-avoid overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:border-primary/35 hover:shadow-lg hover:shadow-primary/10"
+    >
+      <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10]">
+        <SafeImage
+          src={item.coverImage || "/images/default.png"}
+          alt={item.title}
+          fill
+          loading="lazy"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, 50vw"
+          fallback="/images/default.png"
+        />
+        <span className="absolute left-3 top-3 rounded-full bg-secondary/90 px-3 py-1 text-xs font-medium backdrop-blur-sm">
+          {item.category}
+        </span>
+      </div>
+      <div className="p-5">
+        <h2 className="text-lg font-semibold transition-colors group-hover:text-primary">
+          {item.title}
+        </h2>
+        <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
+          {item.shortDescription}
+        </p>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {item.tech?.slice(0, 4).map((tech) => (
+            <span
+              key={tech}
+              className="rounded bg-secondary px-2 py-0.5 text-xs text-muted-foreground"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function ProjectsContent({ items }: { items: WorkItem[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
   const t = useTranslations("projectsPage");
-  const tCat = useTranslations("categories");
 
-  const initialFilter = (searchParams.get("category") as ProjectCategory | null) ?? "all";
-  const [filter, setFilter] = useState<ProjectCategory | "all">(
-    filterIds.some((f) => f.id === initialFilter) ? initialFilter : "all",
+  const initialType = (searchParams.get("type") as WorkType | null) ?? "all";
+  const [typeFilter, setTypeFilter] = useState<WorkType | "all">(
+    typeFilters.some((f) => f.id === initialType) ? initialType : "all",
   );
 
-  const list = useMemo(() => {
-    if (filter === "all") return projects;
-    return projects.filter((p) => p.category === filter);
-  }, [filter, projects]);
+  const initialCat = searchParams.get("category") ?? "all";
+  const [catFilter, setCatFilter] = useState<string>("all");
 
-  const handleFilterChange = useCallback(
-    (id: ProjectCategory | "all") => {
-      setFilter(id);
+  const typeFiltered = useMemo(() => {
+    if (typeFilter === "all") return items;
+    return items.filter((w) => w.type === typeFilter);
+  }, [typeFilter, items]);
+
+  const categories = useMemo(() => getUniqueCategories(typeFiltered), [typeFiltered]);
+  const catInitial = categories.includes(initialCat) ? initialCat : "all";
+  const [categoryFilter, setCategoryFilter] = useState<string>(catInitial);
+
+  const list = useMemo(() => {
+    if (categoryFilter === "all") return typeFiltered;
+    return typeFiltered.filter((w) => w.category === categoryFilter);
+  }, [categoryFilter, typeFiltered]);
+
+  const handleTypeChange = useCallback(
+    (id: WorkType | "all") => {
+      setTypeFilter(id);
+      setCategoryFilter("all");
+      const params = new URLSearchParams(searchParams.toString());
+      params.delete("category");
+      if (id === "all") {
+        params.delete("type");
+      } else {
+        params.set("type", id);
+      }
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    },
+    [searchParams, router, pathname],
+  );
+
+  const handleCategoryChange = useCallback(
+    (id: string) => {
+      setCategoryFilter(id);
       const params = new URLSearchParams(searchParams.toString());
       if (id === "all") {
         params.delete("category");
@@ -59,83 +166,82 @@ function ProjectsContent({ projects }: { projects: Project[] }) {
 
         <div className="mt-10 flex flex-wrap items-center justify-between gap-4">
           <div className="flex flex-wrap gap-2">
-            {filterIds.map((f) => (
-              <button
+            {typeFilters.map((f) => (
+              <Button
                 key={f.id}
                 type="button"
-                onClick={() => handleFilterChange(f.id)}
+                variant="filter"
+                onClick={() => handleTypeChange(f.id)}
                 className={cn(
-                  "rounded-full border px-4 py-2 text-sm font-medium transition-colors",
-                  filter === f.id
-                    ? "border-primary bg-primary/15 text-primary"
-                    : "border-white/10 bg-white/5 text-muted-foreground hover:border-white/20",
+                  typeFilter === f.id && "border-primary bg-primary/10 text-primary",
                 )}
               >
-                {f.id === "all" ? t("filterAll") : tCat(f.id)}
-              </button>
+                {t(f.labelKey)}
+              </Button>
             ))}
           </div>
           <span className="text-sm text-muted-foreground">
-            {list.length} {list.length === 1 ? "project" : "projects"}
+            {list.length} {list.length === 1 ? "item" : "items"}
           </span>
         </div>
 
+        {categories.length > 1 && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => handleCategoryChange("all")}
+              className={cn(
+                "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+                categoryFilter === "all"
+                  ? "border-primary bg-primary/10 text-primary"
+                  : "border-border text-muted-foreground hover:border-primary/30 hover:text-primary",
+              )}
+            >
+              {t("filterAll")}
+            </button>
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => handleCategoryChange(cat)}
+                className={cn(
+                  "rounded-full border px-3 py-1 text-xs font-medium capitalize transition-colors",
+                  categoryFilter === cat
+                    ? "border-primary bg-primary/10 text-primary"
+                    : "border-border text-muted-foreground hover:border-primary/30 hover:text-primary",
+                )}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        )}
+
         {list.length > 0 ? (
           <div className="mt-12 columns-1 gap-6 sm:columns-2">
-            {list.map((p) => (
-              <Link
-                key={p.slug}
-                href={`/projects/${p.slug}`}
-                className="group mb-6 block break-inside-avoid overflow-hidden rounded-2xl border border-white/10 bg-card/30 transition-all hover:border-primary/35 hover:shadow-lg hover:shadow-primary/10"
-              >
-                <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10]">
-                  <Image
-                    src={p.coverImage}
-                    alt={p.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
-                  <span className="absolute left-3 top-3 rounded-full bg-background/85 px-3 py-1 text-xs font-medium backdrop-blur-sm">
-                    {tCat(p.category)}
-                  </span>
-                </div>
-                <div className="p-5">
-                  <h2 className="text-lg font-semibold transition-colors group-hover:text-primary">
-                    {p.title}
-                  </h2>
-                  <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">
-                    {p.shortDescription}
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-1.5">
-                    {p.tech.slice(0, 4).map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounded bg-white/5 px-2 py-0.5 text-xs text-muted-foreground"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </Link>
+            {list.map((item) => (
+              <WorkCard key={`${item.type}-${item.slug}`} item={item} />
             ))}
           </div>
         ) : (
           <div className="mt-16 text-center">
             <div className="mx-auto max-w-sm">
-              <span className="text-5xl">🔍</span>
-              <h2 className="mt-4 text-xl font-semibold">No projects found</h2>
+              <SearchX className="mx-auto h-12 w-12 text-muted-foreground" />
+              <h2 className="mt-4 text-xl font-semibold">{t("emptyTitle")}</h2>
               <p className="mt-2 text-muted-foreground">
-                No projects match the selected category. Try a different filter.
+                {t("emptyDescription")}
               </p>
-              <button
+              <Button
                 type="button"
-                onClick={() => handleFilterChange("all")}
-                className="mt-6 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-sm font-medium transition-colors hover:border-white/20"
+                variant="ghost"
+                onClick={() => {
+                  handleTypeChange("all");
+                  handleCategoryChange("all");
+                }}
+                className="mt-6"
               >
-                Show all projects
-              </button>
+                {t("showAll")}
+              </Button>
             </div>
           </div>
         )}
@@ -144,10 +250,10 @@ function ProjectsContent({ projects }: { projects: Project[] }) {
   );
 }
 
-export function ProjectsClient({ projects }: { projects: Project[] }) {
+export function ProjectsClient({ items }: { items: WorkItem[] }) {
   return (
     <Suspense>
-      <ProjectsContent projects={projects} />
+      <ProjectsContent items={items} />
     </Suspense>
   );
 }

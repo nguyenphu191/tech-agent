@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { SafeImage } from "@/components/ui/safe-image";
 import { Reveal } from "@/components/motion/reveal";
-import type { Project } from "@/data/projects";
+import type { WorkItem } from "@/data/works";
 import { Button } from "@/components/ui/button";
 
-type Props = { projects: Project[] };
+type Props = { projects: WorkItem[] };
 
 export function FeaturedProjectsSection({ projects }: Props) {
   const t = useTranslations("home.projects");
@@ -27,7 +27,7 @@ export function FeaturedProjectsSection({ projects }: Props) {
               </h2>
               <p className="mt-4 text-muted-foreground">{t("subtitle")}</p>
             </div>
-            <Button asChild variant="outline" className="shrink-0 rounded-full">
+            <Button asChild variant="outline" className="shrink-0 rounded-full border-border">
               <Link href="/projects">{t("viewAll")}</Link>
             </Button>
           </div>
@@ -40,12 +40,14 @@ export function FeaturedProjectsSection({ projects }: Props) {
                   className="group block overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-md hover:shadow-primary/5"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image
-                      src={p.coverImage}
+                    <SafeImage
+                      src={p.coverImage || "/images/default.png"}
                       alt={p.title}
                       fill
+                      loading="lazy"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, 50vw"
+                      fallback="/images/default.png"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
                     <span className="absolute left-4 top-4 rounded-full bg-background/80 px-3 py-1 text-xs font-medium text-primary backdrop-blur-sm">
@@ -60,7 +62,7 @@ export function FeaturedProjectsSection({ projects }: Props) {
                       {p.shortDescription}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
-                      {p.tech.map((tech) => (
+                      {p.tech?.map((tech) => (
                         <span
                           key={tech}
                           className="rounded-md border border-border bg-secondary px-2 py-0.5 text-xs text-secondary-foreground"
@@ -69,9 +71,11 @@ export function FeaturedProjectsSection({ projects }: Props) {
                         </span>
                       ))}
                     </div>
-                    <p className="mt-3 text-xs text-muted-foreground">
-                      {t("timeline", { time: p.timeline })}
-                    </p>
+                    {p.timeline && (
+                      <p className="mt-3 text-xs text-muted-foreground">
+                        {t("timeline", { time: p.timeline })}
+                      </p>
+                    )}
                   </div>
                 </Link>
               </Reveal>

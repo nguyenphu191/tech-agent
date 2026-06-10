@@ -26,6 +26,10 @@
     "servicesPage": "服务（页面）",
     "tagline": "网站与移动应用工作室",
     "locationValue": "越南胡志明市",
+    "newsletterLabel": "获取最新动态",
+    "newsletterPlaceholder": "your@email.com",
+    "newsletterError": "请输入有效的邮箱地址",
+    "newsletterSuccess": "订阅成功！",
     "copyright": "© {year} Studio Dev. 保留所有权利。"
   },
   "categories": {
@@ -243,7 +247,12 @@
   "projectsPage": {
     "title": "作品集",
     "subtitle": "公开案例节选 — 网站、应用、看板与体验升级。",
-    "filterAll": "全部"
+    "filterAll": "全部",
+    "caseStudies": "案例研究",
+    "interactiveDemos": "交互演示",
+    "emptyTitle": "未找到项目",
+    "emptyDescription": "没有项目符合所选类别。请尝试其他筛选条件。",
+    "showAll": "显示所有项目"
   },
   "projectDetail": {
     "back": "返回作品集",
